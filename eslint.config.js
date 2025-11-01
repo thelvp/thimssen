@@ -24,5 +24,6 @@ export default defineConfig([
         tsconfigRootDir: import.meta.dirname,
       },
     },
+    'unused-imports/no-unused-imports-ts': 'on',
   },
 ]);
