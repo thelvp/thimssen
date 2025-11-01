@@ -1,33 +1,36 @@
+import { faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 export const Footer = () => {
   return (
     <footer className="fixed bottom-0 left-0 z-20 flex w-full justify-between p-6 text-gray-400">
-      <ul className="mt-3 flex flex-wrap items-center text-sm font-medium sm:mt-0">
+      <ul className="text-md mt-3 flex flex-wrap items-center font-bold sm:mt-0">
         <li>
-          <a href="#" className="me-4 hover:underline md:me-6">
+          <a href="#" className="me-4 hover:text-blue-500 md:me-6">
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="#" className="me-4 hover:text-purple-500 md:me-6">
             About
           </a>
         </li>
         <li>
-          <a href="#" className="me-4 hover:underline md:me-6">
-            Privacy Policy
+          <a href="#" className="me-4 hover:text-pink-500 md:me-6">
+            Work
+          </a>
+        </li>
+        <li>
+          <a href="#" className="me-4 hover:text-orange-500 md:me-6">
+            Contact
           </a>
         </li>
         <li>
           <a
-            href="https://flowbite.com/"
-            className="mb-4 me-4 flex items-center space-x-3 hover:underline sm:mb-0 md:me-6 rtl:space-x-reverse"
+            href="https://www.instagram.com/thimssen/"
+            className="hover:font-extrabold hover:text-yellow-500 md:me-6"
           >
-            <img
-              src="https://flowbite.com/docs/images/logo.svg"
-              className="h-3"
-              alt="Flowbite Logo"
-            />
-            <span className="self-center whitespace-nowrap">Flowbite</span>
-          </a>
-        </li>
-        <li>
-          <a href="#" className="hover:underline">
-            Contact
+            <FontAwesomeIcon icon={faInstagram} />
           </a>
         </li>
       </ul>
