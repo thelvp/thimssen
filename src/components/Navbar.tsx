@@ -1,4 +1,4 @@
-import { faRecordVinyl } from '@fortawesome/free-solid-svg-icons/faRecordVinyl';
+import { faCompactDisc } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router';
 
@@ -8,7 +8,7 @@ export const Navbar = () => {
   return (
     <div className="flex w-full items-center justify-between py-8">
       <span className="flex text-3xl font-bold">
-        <FontAwesomeIcon icon={faRecordVinyl} className="pr-2 text-blue-600" />
+        <FontAwesomeIcon icon={faCompactDisc} className="pr-2 text-blue-600" />
         <h1 className="bg-[linear-gradient(to_right,var(--color-blue-600),var(--color-purple-500),var(--color-pink-400),var(--color-orange-300))] bg-clip-text text-transparent">
           Thimssen
         </h1>
