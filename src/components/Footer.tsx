@@ -2,10 +2,10 @@ import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export const Footer = () => {
-  const baseLinkClasses = 'me-4 md:me-6 font-bold';
+  const baseLinkClasses = 'me-4 md:me-6';
 
   return (
-    <footer className="fixed bottom-0 left-0 z-20 flex w-full justify-between p-8 text-gray-300">
+    <footer className="left-0 z-20 flex w-full justify-between p-8 text-gray-300">
       <ul className="mt-3 flex flex-wrap items-center text-sm sm:mt-0">
         <li>
           <a href="/" className={`${baseLinkClasses} hover:text-blue-500`}>

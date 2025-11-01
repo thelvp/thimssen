@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="flex h-screen flex-col">
       <Navbar />
-      <h1>Content</h1>
+      <h1 className="h-dvh">Content</h1>
       <Footer />
     </div>
   );
