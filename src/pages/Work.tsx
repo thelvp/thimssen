@@ -1,8 +1,8 @@
 export function Work() {
   return (
-    <>
-      <h1 className="text-2xl font-semibold">Work</h1>
+    <div>
+      <h1 className="mb-8 text-5xl font-semibold underline">Work</h1>
       <p className="mt-4">Paragraph text.</p>
-    </>
+    </div>
   );
 }
