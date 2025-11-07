@@ -2,7 +2,6 @@ import { faInstagram, faSpotify } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export const Footer = () => {
-  const baseLinkClasses = '';
   const baseFocusA11YClasses =
     'focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500 rounded-sm';
 
@@ -16,7 +15,7 @@ export const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
               href="https://www.instagram.com/thimssen/"
-              className={` ${baseFocusA11YClasses} hover:text-yellow-500`}
+              className={` ${baseFocusA11YClasses} hover:text-pink-500`}
             >
               Instagram
               <FontAwesomeIcon
