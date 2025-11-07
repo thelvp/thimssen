@@ -3,15 +3,16 @@ import banner from '../assets/banner.jpeg';
 
 export function Home() {
   return (
-    <div className="text-whit relative flex min-h-[75vh] w-full items-center justify-center text-center">
+    <div className="relative flex min-h-[75vh] w-full items-center justify-center text-center text-white">
+      {/* decorative background image — hidden from AT */}
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
           backgroundImage: `url(${banner})`,
         }}
-        role="img"
+        aria-hidden="true"
       />
-      <div className="bg-linear-to-b absolute inset-0 from-transparent to-black"></div>
+      <div className="bg-linear-to-b absolute inset-0 from-transparent to-black/90"></div>
 
       <div className="max-w-1/2 l z-10">
         <h1 className="text-6xl font-extrabold">

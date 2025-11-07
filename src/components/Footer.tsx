@@ -8,30 +8,36 @@ export const Footer = () => {
     'focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500 rounded-sm';
 
   return (
-    <footer className="z-20 flex w-full justify-between px-8 py-4 text-gray-300">
+    <footer className="z-20 flex w-full justify-between px-8 py-4 text-gray-400">
       <ul className="mt-3 flex flex-wrap items-center text-sm sm:mt-0">
         <li>
-          <Link to="/" className={`${baseLinkClasses} hover:text-blue-500`}>
+          <Link
+            to="/"
+            className={`${baseLinkClasses} ${baseFocusA11YClasses} hover:text-blue-500`}
+          >
             Home
           </Link>
         </li>
         <li>
           <Link
             to="/about"
-            className={`${baseLinkClasses} hover:text-purple-500`}
+            className={`${baseLinkClasses} ${baseFocusA11YClasses} hover:text-purple-500`}
           >
             About
           </Link>
         </li>
         <li>
-          <Link to="/work" className={`${baseLinkClasses} hover:text-pink-500`}>
+          <Link
+            to="/work"
+            className={`${baseLinkClasses} ${baseFocusA11YClasses} hover:text-pink-500`}
+          >
             Work
           </Link>
         </li>
         <li>
           <Link
             to="/contact"
-            className={`${baseLinkClasses} hover:text-orange-500`}
+            className={`${baseLinkClasses} ${baseFocusA11YClasses} hover:text-orange-500`}
           >
             Contact
           </Link>
