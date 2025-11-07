@@ -1,10 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router';
-import { About } from './pages/About';
-import { ErrorPage } from './pages/Errorpage';
-import { Home } from './pages/Home';
-import { Work } from './pages/Work';
-import { Contact } from './pages/Contact';
-import { Layout } from './components/Layout';
+import { Layout } from './components';
+import { Home, About, Work, Contact, ErrorPage } from './pages';
 
 function App() {
   return (

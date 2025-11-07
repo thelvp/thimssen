@@ -6,7 +6,7 @@ export const Navbar = () => {
   const linkStyle = 'hover:underline';
 
   return (
-    <div className="flex w-full items-center justify-between py-8">
+    <div className="flex w-full items-center justify-between px-8 py-5">
       <span className="flex text-3xl font-bold">
         <FontAwesomeIcon icon={faCompactDisc} className="pr-2 text-blue-600" />
         <h1 className="bg-[linear-gradient(to_right,var(--color-blue-600),var(--color-purple-500),var(--color-pink-400),var(--color-orange-300))] bg-clip-text text-transparent">

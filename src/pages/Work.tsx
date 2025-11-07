@@ -1,8 +1,8 @@
 export function Work() {
   return (
-    <div>
-      <h1 className="mb-8 text-5xl font-semibold underline">Work</h1>
-      <p className="mt-4">Paragraph text.</p>
+    <div className="max-w-xl py-16">
+      <h2 className="mb-4 text-3xl font-bold sm:text-4xl">Work</h2>
+      <p className="mb-4 text-lg leading-relaxed">Blablabla</p>
     </div>
   );
 }

@@ -1,15 +1,14 @@
 import { Outlet } from 'react-router';
 import { Navbar } from './Navbar';
 import { Footer } from './Footer';
-import { ContentLayout } from './ContentLayout';
 
 export function Layout() {
   return (
-    <main className={`px-8`}>
+    <main className="flex min-h-screen flex-col">
       <Navbar />
-      <ContentLayout>
+      <div className="flex w-full flex-1 flex-col justify-center text-center md:flex-row">
         <Outlet />
-      </ContentLayout>
+      </div>
       <Footer />
     </main>
   );
