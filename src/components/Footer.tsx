@@ -15,7 +15,7 @@ export const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
               href="https://www.instagram.com/thimssen/"
-              className={` ${baseFocusA11YClasses} hover:text-pink-500`}
+              className={` ${baseFocusA11YClasses} hover:text-pink-600`}
             >
               Instagram
               <FontAwesomeIcon
@@ -37,7 +37,7 @@ export const Footer = () => {
               Spotify
               <FontAwesomeIcon
                 icon={faSpotify}
-                className="ml-1"
+                className="ml-1 text-green-500"
                 aria-hidden="true"
                 focusable={false}
               />
