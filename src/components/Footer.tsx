@@ -7,15 +7,15 @@ export const Footer = () => {
 
   return (
     <footer className="z-20 w-full py-4 text-gray-400">
-      <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-4 sm:grid-cols-3">
+      <div className="mx-auto flex flex-col items-center justify-center gap-4">
         <div className="hidden sm:block" />
-        <ul className="flex flex-wrap items-center justify-center text-sm">
+        <ul className="flex flex-wrap text-sm hover:font-semibold">
           <li>
             <a
               target="_blank"
               rel="noopener noreferrer"
               href="https://www.instagram.com/thimssen/"
-              className={` ${baseFocusA11YClasses} hover:text-pink-600`}
+              className={` ${baseFocusA11YClasses} hover:text-yellow-600`}
             >
               Instagram
               <FontAwesomeIcon
@@ -46,9 +46,9 @@ export const Footer = () => {
           </li>
         </ul>
 
-        <p className="justify-self-end text-right text-xs">
+        <p className="text-xs">
           <a
-            className={`group ${baseFocusA11YClasses}`}
+            className={`group ${baseFocusA11YClasses}hover:font-semibold`}
             href="https://github.com/thelvp"
           >
             Designed with{' '}
