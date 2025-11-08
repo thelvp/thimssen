@@ -7,12 +7,12 @@ export const Navbar = () => {
 
   return (
     <div className="flex w-full items-center justify-between px-8 py-5">
-      <span className="flex text-3xl font-bold">
+      <Link to={'/'} className="flex text-3xl font-bold">
         <FontAwesomeIcon icon={faCompactDisc} className="pr-2 text-blue-600" />
         <h1 className="bg-[linear-gradient(to_right,var(--color-blue-600),var(--color-purple-500),var(--color-pink-400),var(--color-orange-300))] bg-clip-text text-transparent">
           Thimssen
         </h1>
-      </span>
+      </Link>
       <ul className="gap-13 mt-3 flex flex-wrap items-center pr-12 text-xl font-bold sm:mt-0">
         <li>
           <Link to="/" className={`${linkStyle} hover:text-blue-500`}>
