@@ -11,7 +11,9 @@ export function About() {
         </div>
 
         <div className="w-full md:w-1/2">
-          <h2 className="mb-4 text-3xl font-bold sm:text-4xl">Thimssen</h2>
+          <h2 className="mb-4 text-3xl font-bold text-white sm:text-4xl">
+            Thimssen
+          </h2>
           <p className="mb-4 text-lg leading-relaxed">
             Thimssen is een producer en muzikant met een passie voor het creëren
             van sferen en verhalen door geluid. Vanuit zijn studio werkt hij aan

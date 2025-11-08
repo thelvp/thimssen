@@ -3,7 +3,7 @@ import { ContactForm } from '../components/ContactForm';
 export function Contact() {
   return (
     <div className="max-w-xl py-16">
-      <h2 className="mb-4 text-3xl font-bold sm:text-4xl">
+      <h2 className="mb-4 text-3xl font-bold text-white sm:text-4xl">
         Let's get in touch
       </h2>
       <p className="mb-4 text-lg leading-relaxed">

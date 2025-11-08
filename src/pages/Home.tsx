@@ -1,5 +1,5 @@
 import { Link } from 'react-router';
-import banner from '../assets/banner.jpeg';
+import band from '../assets/echo_beach.jpeg';
 
 export function Home() {
   return (
@@ -8,7 +8,7 @@ export function Home() {
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
-          backgroundImage: `url(${banner})`,
+          backgroundImage: `url(${band})`,
         }}
         aria-hidden="true"
       />

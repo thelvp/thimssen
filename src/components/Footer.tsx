@@ -24,7 +24,7 @@ export const Footer = () => {
                 aria-hidden="true"
                 focusable={false}
               />
-              <span className="sr-only"> (opens in a new tab)</span>
+              <span className="sr-only">(opens in a new tab)</span>
             </a>
           </li>
           <li>
@@ -48,7 +48,7 @@ export const Footer = () => {
 
         <p className="justify-self-end text-right text-xs">
           <a
-            className={`group hover:underline ${baseFocusA11YClasses}`}
+            className={`group ${baseFocusA11YClasses}`}
             href="https://github.com/thelvp"
           >
             Designed with{' '}
