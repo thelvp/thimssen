@@ -1,6 +1,6 @@
 export const NavbarCreds = () => {
   return (
-    <p className="items-end text-xs">
+    <p className="items-end text-xs text-gray-500 hover:text-gray-300">
       <a
         className={'group hover:font-semibold'}
         href="https://github.com/thelvp"
