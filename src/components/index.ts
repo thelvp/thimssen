@@ -1,4 +1,4 @@
-export { Navbar } from './Navbar';
-export { ContactForm } from './ContactForm';
-export { Layout } from './Layout';
-export { Footer } from './Footer';
+export * from './Navbar';
+export * from './ContactForm/ContactForm';
+export * from './Layout';
+export * from './Footer/Footer';
