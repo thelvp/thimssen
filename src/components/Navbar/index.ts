@@ -1,2 +1,2 @@
 export * from './Navbar';
-export * from './NavbarListItem';
+export * from './NavbarLink';

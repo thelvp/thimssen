@@ -1,5 +1,5 @@
 import { Link } from 'react-router';
-import { NavbarListItem } from './NavbarListItem';
+import { NavbarLink } from './NavbarLink';
 import { Logo } from '../Logo/Logo';
 
 export const Navbar = () => {
@@ -22,7 +22,7 @@ export const Navbar = () => {
       <ul className="gap-13 mt-3 flex flex-wrap items-center pr-12 text-xl font-bold sm:mt-0">
         {NavbarLinks.map((link) => {
           return (
-            <NavbarListItem
+            <NavbarLink
               color={link.color}
               navTitle={link.title}
               href={link.href}

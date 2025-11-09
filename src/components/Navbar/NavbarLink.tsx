@@ -6,7 +6,7 @@ type NavbarLinkProps = {
   href: string;
 };
 
-export const NavbarListItem = ({ color, navTitle, href }: NavbarLinkProps) => {
+export const NavbarLink = ({ color, navTitle, href }: NavbarLinkProps) => {
   return (
     <li>
       <Link to={href} className={`hover:text-${color} hover:underline`}>
