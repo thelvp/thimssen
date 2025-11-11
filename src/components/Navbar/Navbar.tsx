@@ -23,7 +23,7 @@ export const Navbar = () => {
       <Link to={'/'} className="mx-4">
         <Logo />
       </Link>
-      <ul className="sm:gap-13 flex flex-wrap items-center gap-4 pr-3 sm:pr-12">
+      <ul className="md:gap-13 flex flex-wrap items-center gap-2 pr-6 sm:gap-4 sm:pr-8 md:pr-12">
         {NavbarLinks.map((link) => {
           return (
             <NavbarLink

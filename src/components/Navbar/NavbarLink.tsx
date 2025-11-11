@@ -13,6 +13,9 @@ type NavbarLinkProps = {
 export const NavbarLink = ({ color, title, href }: NavbarLinkProps) => {
   const isMobile = useIsMobile();
   const resolvedIcon: IconProp = iconMap[title] as IconProp;
+  const homeOnMobile = isMobile && title === 'Home';
+
+  if (homeOnMobile) return null;
 
   return (
     <li className="text-sm font-bold sm:text-xl">
@@ -20,7 +23,7 @@ export const NavbarLink = ({ color, title, href }: NavbarLinkProps) => {
         {isMobile ? (
           <FontAwesomeIcon
             icon={resolvedIcon}
-            className="text-lg text-gray-400"
+            className="text-lg text-gray-400 sm:text-2xl"
           />
         ) : (
           title

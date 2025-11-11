@@ -3,7 +3,7 @@ import band from '../assets/echo_beach.jpeg';
 
 export function Home() {
   return (
-    <div className="relative flex min-h-[75vh] w-full items-center justify-center pb-3 text-center text-white">
+    <div className="relative flex h-full w-full items-center justify-center pb-3 text-center text-white">
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
