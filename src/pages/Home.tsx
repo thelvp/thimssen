@@ -3,8 +3,7 @@ import band from '../assets/echo_beach.jpeg';
 
 export function Home() {
   return (
-    <div className="relative flex min-h-[75vh] w-full items-center justify-center text-center text-white">
-      {/* decorative background image — hidden from AT */}
+    <div className="relative flex min-h-[75vh] w-full items-center justify-center pb-3 text-center text-white">
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
@@ -15,11 +14,11 @@ export function Home() {
       <div className="bg-linear-to-b absolute inset-0 from-transparent to-black/90"></div>
 
       <div className="max-w-1/2 l z-10">
-        <h1 className="text-6xl font-extrabold">
+        <h1 className="text-3xl font-extrabold sm:text-6xl">
           Thimssen - music producer & muzikant
         </h1>
 
-        <p className="mt-3 text-xl">
+        <p className="mt-3 text-lg sm:text-xl">
           Van gelaagde producties tot live shows met{' '}
           <a
             className="font-semibold underline-offset-4 hover:underline"

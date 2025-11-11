@@ -4,7 +4,11 @@ import { Logo } from '../Logo/Logo';
 
 export const Navbar = () => {
   const NavbarLinks = [
-    { href: '/', title: 'Home', color: 'blue-500' },
+    {
+      href: '/',
+      title: 'Home',
+      color: 'blue-500',
+    },
     { href: '/about', title: 'About', color: 'purple-500' },
     { href: '/work', title: 'Work', color: 'pink-500' },
     {
@@ -15,16 +19,16 @@ export const Navbar = () => {
   ];
 
   return (
-    <div className="flex w-full items-center justify-between px-8 py-5">
-      <Link to={'/'} className="flex text-3xl font-bold">
+    <div className="flex w-full items-center justify-between py-5 sm:px-8">
+      <Link to={'/'} className="mx-4">
         <Logo />
       </Link>
-      <ul className="gap-13 mt-3 flex flex-wrap items-center pr-12 text-xl font-bold sm:mt-0">
+      <ul className="sm:gap-13 flex flex-wrap items-center gap-4 pr-3 sm:pr-12">
         {NavbarLinks.map((link) => {
           return (
             <NavbarLink
               color={link.color}
-              navTitle={link.title}
+              title={link.title}
               href={link.href}
             />
           );
