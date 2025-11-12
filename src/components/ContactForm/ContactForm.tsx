@@ -28,10 +28,10 @@ export const ContactForm = () => {
   return (
     <form
       onSubmit={handleSubmit}
-      className="mt-6 flex flex-col gap-4 text-start"
+      className="mt-6 flex flex-col gap-4 text-start text-sm sm:text-base"
     >
       <label className="flex flex-col">
-        <span className="text-sm font-medium">Naam</span>
+        <span>Naam</span>
         <input
           value={name}
           onChange={(e) => setName(e.target.value)}
@@ -43,7 +43,7 @@ export const ContactForm = () => {
       </label>
 
       <label className="flex flex-col">
-        <span className="text-sm font-medium">Je bericht</span>
+        <span>Je bericht</span>
         <textarea
           value={message}
           onChange={(e) => setMessage(e.target.value)}
@@ -56,7 +56,7 @@ export const ContactForm = () => {
 
       <button
         type="submit"
-        className="t mt-2 inline-block rounded bg-blue-600 px-4 py-2"
+        className="mt-2 inline-block rounded bg-blue-600 px-4 py-2 font-semibold shadow-lg transition-all duration-300 hover:bg-blue-800 hover:shadow-xl"
         disabled={status === 'sending'}
       >
         {status === 'sending' ? 'Aan het versturen...' : 'Versturen'}
@@ -67,7 +67,7 @@ export const ContactForm = () => {
       )}
       {status === 'error' && (
         <p className="text-sm text-red-500">
-          Niet gelukt, probeer later nog eeens.
+          Niet gelukt, probeer later nog eens.
         </p>
       )}
     </form>
