@@ -21,10 +21,14 @@ export const NavbarLink = ({ color, title, href }: NavbarLinkProps) => {
     <li className="text-sm font-bold sm:text-xl">
       <Link to={href} className={`sm:hover:text-${color} sm:hover:underline`}>
         {isMobile ? (
-          <FontAwesomeIcon
-            icon={resolvedIcon}
-            className="text-lg text-gray-400 sm:text-2xl"
-          />
+          <>
+            <FontAwesomeIcon
+              icon={resolvedIcon}
+              className="text-lg text-gray-400 sm:text-2xl"
+              aria-hidden={true}
+            />
+            <span className="sr-only">{title}</span>
+          </>
         ) : (
           title
         )}
