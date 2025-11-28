@@ -20,15 +20,15 @@ export const PortfolioItem = ({
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="m-3 transform rounded-2xl border-2 border-solid border-gray-800 bg-white text-left text-black/90 bg-blend-color transition-transform duration-200 ease-out hover:scale-95"
+      className="m-3 transform rounded-2xl bg-white text-left text-black/90 bg-blend-color transition-transform duration-200 ease-out hover:scale-95"
     >
       <div>
         <img src={imageSrc} className="h-full w-full object-cover" alt="" />
       </div>
 
       <div className="flex flex-col justify-center border-b-4 border-b-black p-3 font-extrabold">
-        <h3 className="text-2xl">{artistName}</h3>
-        <h3 className="text-4xl"> {title}</h3>
+        <h3 className="text-xl">{artistName}</h3>
+        <h3 className="text-3xl"> {title}</h3>
       </div>
 
       <div className="flex items-center justify-between p-3">
