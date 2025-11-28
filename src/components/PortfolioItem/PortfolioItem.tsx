@@ -1,0 +1,50 @@
+export interface PortfolioItemProps {
+  artistName: string;
+  title: string;
+  year: string;
+  categoryItems: string[];
+  href: string;
+  imageSrc: string;
+}
+
+export const PortfolioItem = ({
+  artistName,
+  title,
+  year,
+  categoryItems,
+  href,
+  imageSrc,
+}: PortfolioItemProps) => {
+  return (
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="m-3 transform rounded-2xl border-2 border-solid border-gray-800 bg-white text-left text-black/90 bg-blend-color transition-transform duration-200 ease-out hover:scale-95"
+    >
+      <div>
+        <img src={imageSrc} className="h-full w-full object-cover" alt="" />
+      </div>
+
+      <div className="flex flex-col justify-center border-b-4 border-b-black p-3 font-extrabold">
+        <h3 className="text-2xl">{artistName}</h3>
+        <h3 className="text-4xl"> {title}</h3>
+      </div>
+
+      <div className="flex items-center justify-between p-3">
+        <p className="text-base">{year}</p>
+        <ul className="flex flex-wrap">
+          {categoryItems.map((item) => {
+            return (
+              <li key={item}>
+                <p className="ml-2 rounded-2xl bg-amber-400 px-3 py-2 font-mono text-xs">
+                  {item}
+                </p>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+    </a>
+  );
+};
