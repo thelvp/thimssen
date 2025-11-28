@@ -1,4 +1,4 @@
-import echoBeach from '../assets/echo_beach.jpeg';
+import echoBeach from '../assets/thimssen_about.jpg';
 
 export function About() {
   const paragraphStyle = 'mb-4 leading-relaxed text-sm sm:text-base';
