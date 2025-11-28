@@ -4,7 +4,7 @@ export function About() {
   const paragraphStyle = 'mb-4 leading-relaxed text-sm sm:text-base';
 
   return (
-    <div className="mx-auto flex max-w-6xl flex-col items-center justify-center gap-12 px-6 py-16 md:flex-row md:items-start md:gap-16">
+    <div className="mx-auto flex max-w-6xl flex-col items-center justify-center gap-12 px-6 py-8 md:flex-row md:items-start md:gap-16">
       <div className="w-full md:w-1/2">
         <div className="aspect-square w-full overflow-hidden rounded-2xl shadow-lg">
           <img
@@ -15,7 +15,7 @@ export function About() {
         </div>
       </div>
 
-      <div className="w-full md:w-1/2 md:pr-8">
+      <div className="w-full md:w-1/2 md:pr-8 md:pt-8">
         <h2 className="mb-4 text-3xl font-bold text-white/90 sm:text-4xl">
           Thimssen
         </h2>

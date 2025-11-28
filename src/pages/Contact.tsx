@@ -2,7 +2,7 @@ import { ContactForm } from '../components/ContactForm/ContactForm';
 
 export function Contact() {
   return (
-    <div className="mx-auto flex w-full flex-col items-center px-6 sm:py-16">
+    <div className="mx-auto flex w-full flex-col items-center px-6 sm:py-8">
       <h2 className="mb-4 text-3xl font-bold text-white/90 sm:text-4xl">
         Let's get in touch
       </h2>

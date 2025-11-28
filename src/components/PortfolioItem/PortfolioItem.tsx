@@ -32,12 +32,12 @@ export const PortfolioItem = ({
       </div>
 
       <div className="flex items-center justify-between p-3">
-        <p className="text-base">{year}</p>
+        <p className="mr-8 text-base">{year}</p>
         <ul className="flex flex-wrap">
           {categoryItems.map((item) => {
             return (
-              <li key={item}>
-                <p className="ml-2 rounded-2xl bg-amber-400 px-3 py-2 font-mono text-xs">
+              <li key={item} className="m-1">
+                <p className="rounded-2xl bg-amber-400 px-2 py-1 font-mono text-[10px] sm:px-3 sm:py-2 sm:text-xs">
                   {item}
                 </p>
               </li>
