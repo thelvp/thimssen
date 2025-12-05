@@ -2,6 +2,7 @@ import { faLink } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import type { MediaType } from './PortfolioItem';
 import { ICON_COLOR_MAP, ICON_MAP } from '../../utils';
+import { useIsMobile } from '../../hooks/useIsMobile';
 
 interface PortfolioItemOverlayProps {
   links: { url: string; mediaType: MediaType }[];
@@ -14,6 +15,8 @@ export const PortfolioItemOverlay = ({
   closeOverlay,
   modalOpen,
 }: PortfolioItemOverlayProps) => {
+  const isMobile = useIsMobile();
+
   return (
     <div
       role="dialog"
@@ -33,7 +36,11 @@ export const PortfolioItemOverlay = ({
           return (
             <li
               key={link.url}
-              className={`text-6xl text-white hover:${colorClass}`}
+              className={`text-6xl ${
+                isMobile
+                  ? `text-${colorClass}`
+                  : `text-white hover:text-${colorClass}`
+              }`}
             >
               <a
                 href={link.url}
