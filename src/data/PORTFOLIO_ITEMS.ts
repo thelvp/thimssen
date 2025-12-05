@@ -20,6 +20,10 @@ export const PORTFOLIO_ITEMS: PortfolioItemProps[] = [
         url: 'https://www.instagram.com/p/DReznH-laAE/',
         mediaType: 'Instagram',
       },
+      // {
+      //   url: 'https://www.instagram.com/p/DReznH-laAE/',
+      //   mediaType: 'Spotify',
+      // },
     ],
     imageSrc: wijamersoortMarketingVideo,
   },

@@ -21,12 +21,12 @@ export const PortfolioItemOverlay = ({
     <div
       role="dialog"
       aria-hidden={!modalOpen}
-      className="absolute inset-0 z-50 flex flex-col items-center justify-center bg-black/80 p-6"
+      className="absolute inset-0 z-50 flex flex-col items-center justify-center bg-black/80 p-6 text-white"
       onClick={(e) => {
         if (e.target === e.currentTarget) closeOverlay();
       }}
     >
-      <p className="mb-6 text-center text-3xl text-white">Luisteren:</p>
+      <p className="mb-6 text-center text-3xl">Luisteren:</p>
       <ul className="flex gap-6">
         {links.map((link) => {
           const Icon = ICON_MAP[link.mediaType] || faLink;
