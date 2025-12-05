@@ -1,4 +1,4 @@
-export const NavbarCreds = () => {
+export const FooterCreds = () => {
   return (
     <p className="items-end text-xs text-gray-500 hover:text-gray-300">
       <a

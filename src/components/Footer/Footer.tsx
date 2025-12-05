@@ -1,6 +1,6 @@
 import { faInstagram, faSpotify } from '@fortawesome/free-brands-svg-icons';
 import { FooterLink } from './FooterLink';
-import { NavbarCreds } from '../Navbar/NavbarCreds';
+import { FooterCreds } from './FooterCreds';
 
 export const Footer = () => {
   return (
@@ -24,7 +24,7 @@ export const Footer = () => {
         </ul>
 
         <div className="text-wrap text-center sm:text-right">
-          <NavbarCreds />
+          <FooterCreds />
         </div>
       </div>
     </footer>
