@@ -1,5 +1,4 @@
 import { Link } from 'react-router';
-import { NavbarLink } from './NavbarLink';
 import { Logo } from '../Logo/Logo';
 import { useIsMobile } from '../../hooks/useIsMobile';
 import { NAV_ITEMS } from '../../data/NAV_ITEMS';
@@ -16,21 +15,23 @@ export const Navbar = () => {
           <Logo />
         </Link>
 
-        {/* Desktop links */}
+        {/* Desktop */}
         {!isMobile && (
           <ul className="md:gap-13 flex flex-wrap items-center gap-4 pr-6">
             {NAV_ITEMS.map((item) => (
-              <NavbarLink
-                key={item.href}
-                color={item.color}
-                title={item.title}
-                href={item.href}
-              />
+              <li className="text-sm font-bold sm:text-xl">
+                <Link
+                  to={item.href}
+                  className={`sm:hover:text-${item.color} sm:hover:underline`}
+                >
+                  {item.title}
+                </Link>
+              </li>
             ))}
           </ul>
         )}
 
-        {/* Mobile menu */}
+        {/* Mobile */}
         {isMobile && <MobileNavbarMenu />}
       </div>
     </nav>
