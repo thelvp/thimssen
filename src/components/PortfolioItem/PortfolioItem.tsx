@@ -1,9 +1,11 @@
+type MediaType = 'Instagram' | 'Youtube' | 'Spotify' | 'Other';
+
 export interface PortfolioItemProps {
   artistName: string;
   title: string;
   year: string;
   categoryItems: string[];
-  href: string;
+  links: { url: string; mediaType: MediaType }[];
   imageSrc: string;
 }
 
@@ -12,15 +14,16 @@ export const PortfolioItem = ({
   title,
   year,
   categoryItems,
-  href,
+  // TODO:
+  links,
   imageSrc,
 }: PortfolioItemProps) => {
   return (
-    <a
-      href={href}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="m-3 transform rounded-2xl bg-white text-left text-black/90 bg-blend-color transition-transform duration-200 ease-out hover:scale-95"
+    <div
+      // href={href}
+      // target="_blank"
+      // rel="noopener noreferrer"
+      className="m-3 transform cursor-pointer rounded-2xl bg-white text-left text-black/90 transition-transform duration-200 ease-out hover:scale-95"
     >
       <div>
         <img src={imageSrc} className="h-full w-full object-cover" alt="" />
@@ -45,6 +48,6 @@ export const PortfolioItem = ({
           })}
         </ul>
       </div>
-    </a>
+    </div>
   );
 };
