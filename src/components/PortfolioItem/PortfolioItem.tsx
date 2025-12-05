@@ -1,4 +1,3 @@
-import { useMemo } from 'react';
 import { PortfolioItemOverlay } from './PortfolioItemOverlay';
 import { PortfolioImage } from './PortfolioImage';
 import { PortfolioContent } from './PortfolioContent';
