@@ -17,12 +17,12 @@ export const MobileNavbarMenu = () => {
         type="button"
         aria-controls="mobile-navigation"
         aria-expanded={open}
+        aria-label={open ? 'Close menu' : 'Open menu'}
         onClick={onHandleClick}
-        className="cursor-pointer"
+        className={`cursor-pointer ${!open && 'hidden'}}`}
       >
-        <span className="sr-only">{open ? 'Close menu' : 'Open menu'}</span>
         <FontAwesomeIcon
-          icon={open ? faXmark : faBars}
+          icon={faBars}
           className="px-4 text-white sm:text-2xl"
         />
       </button>
@@ -33,12 +33,24 @@ export const MobileNavbarMenu = () => {
           role="dialog"
           aria-modal="true"
           aria-label="Mobile Navigation"
-          className="fixed inset-0 z-50 overflow-auto bg-black/95 p-6"
+          aria-hidden={!open}
+          className="fixed inset-0 z-50 overflow-auto bg-black/90 p-6"
           onClick={() => setOpen(false)}
         >
-          <ul className="flex min-h-[60vh] flex-col items-start justify-center gap-4 pl-6">
+          <button
+            type="button"
+            onClick={() => setOpen(false)}
+            aria-label="Close menu"
+            className="absolute right-4 top-4 cursor-pointer p-2 text-white"
+          >
+            <FontAwesomeIcon icon={faXmark} className="text-2xl" />
+          </button>
+          <ul className="flex min-h-[60vh] flex-col items-center justify-center gap-4 pl-6">
             {NAV_ITEMS.map((item) => (
-              <li className="text-3xl font-bold">
+              <li
+                className="text-3xl font-bold hover:underline"
+                onClick={() => setOpen(false)}
+              >
                 <Link to={item.href}>{item.title}</Link>
               </li>
             ))}
