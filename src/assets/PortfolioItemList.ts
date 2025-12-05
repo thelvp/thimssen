@@ -7,6 +7,7 @@ import lighthouse from './lighthouse02.png';
 import dellaDixLivesessie from './delladix_livesessie.jpg';
 import wijamersoortMarketingVideo from './wijamersfoort_marketingvideo.jpg';
 import wijamersfoortWijkgedichten from './wijamersfoort_wijkgedichten.png';
+import palmerDoubt from './palmer_doubt.jpg'
 
 export const PORTFOLIO_ITEMS: PortfolioItemProps[] = [
   {
@@ -100,4 +101,12 @@ export const PORTFOLIO_ITEMS: PortfolioItemProps[] = [
     ],
     imageSrc: dust,
   },
+  {
+    artistName: 'PALMER',
+    title: 'Doubt',
+    year: '2016',
+    categoryItems: ['songwriting', 'drums', 'guitar'],
+    href: 'https://www.youtube.com/watch?v=qalzuCevF2w',
+    imageSrc: palmerDoubt,
+  }
 ];
