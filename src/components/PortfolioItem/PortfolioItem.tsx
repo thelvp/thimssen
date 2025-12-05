@@ -23,10 +23,14 @@ export const PortfolioItem = ({
       // href={href}
       // target="_blank"
       // rel="noopener noreferrer"
-      className="m-3 transform cursor-pointer rounded-2xl bg-white text-left text-black/90 transition-transform duration-200 ease-out hover:scale-95"
+      className="m-3 transform cursor-pointer overflow-hidden rounded-2xl bg-white text-left text-black/90 transition-transform duration-200 ease-out hover:scale-95"
     >
       <div>
-        <img src={imageSrc} className="h-full w-full object-cover" alt="" />
+        <img
+          src={imageSrc}
+          className="block h-full w-full object-cover"
+          alt=""
+        />
       </div>
 
       <div className="flex flex-col justify-center border-b-4 border-b-black p-3 font-extrabold">
