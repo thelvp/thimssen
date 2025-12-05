@@ -1,4 +1,4 @@
-import { PORTFOLIO_ITEMS } from '../assets/PortfolioItemList';
+import { PORTFOLIO_ITEMS } from '../data/PORTFOLIO_ITEMS';
 import { PortfolioItem } from '../components/PortfolioItem/PortfolioItem';
 
 export function Work() {

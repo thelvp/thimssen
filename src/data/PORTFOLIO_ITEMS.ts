@@ -1,13 +1,13 @@
 import type { PortfolioItemProps } from '../components/PortfolioItem/PortfolioItem';
 
-import boyleLighter from './boyle_lighter.jpg';
-import dust from './dust02.png';
-import hunger from './hunger02.png';
-import lighthouse from './lighthouse02.png';
-import dellaDixLivesessie from './delladix_livesessie.jpg';
-import wijamersoortMarketingVideo from './wijamersfoort_marketingvideo.jpg';
-import wijamersfoortWijkgedichten from './wijamersfoort_wijkgedichten.png';
-import palmerDoubt from './palmer_doubt.jpg'
+import boyleLighter from '../assets/boyle_lighter.jpg';
+import dust from '../assets/dust02.png';
+import hunger from '../assets/hunger02.png';
+import lighthouse from '../assets/lighthouse02.png';
+import dellaDixLivesessie from '../assets/delladix_livesessie.jpg';
+import wijamersoortMarketingVideo from '../assets/wijamersfoort_marketingvideo.jpg';
+import wijamersfoortWijkgedichten from '../assets/wijamersfoort_wijkgedichten.png';
+import palmerDoubt from '../assets/palmer_doubt.jpg';
 
 export const PORTFOLIO_ITEMS: PortfolioItemProps[] = [
   {
@@ -106,7 +106,12 @@ export const PORTFOLIO_ITEMS: PortfolioItemProps[] = [
     title: 'Doubt',
     year: '2016',
     categoryItems: ['songwriting', 'drums', 'guitar'],
-    href: 'https://www.youtube.com/watch?v=qalzuCevF2w',
+    links: [
+      {
+        url: 'https://www.youtube.com/watch?v=qalzuCevF2w',
+        mediaType: 'Youtube',
+      },
+    ],
     imageSrc: palmerDoubt,
-  }
+  },
 ];
