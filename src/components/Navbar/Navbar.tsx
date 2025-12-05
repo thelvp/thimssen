@@ -17,7 +17,7 @@ export const Navbar = () => {
 
         {/* Desktop */}
         {!isMobile && (
-          <ul className="md:gap-13 flex flex-wrap items-center gap-4 pr-6">
+          <ul className="flex flex-wrap items-center gap-8 last:pr-8">
             {NAV_ITEMS.map((item) => (
               <li className="text-sm font-bold sm:text-xl">
                 <Link
