@@ -16,6 +16,7 @@ export const PortfolioContent = ({
 }: PortfolioContentProps) => {
   return (
     <>
+      {/* -- First row -- */}
       {/* Artist & title  */}
       <div className="flex justify-between p-3 font-extrabold">
         <div className="flex flex-col justify-center">
@@ -24,8 +25,9 @@ export const PortfolioContent = ({
         </div>
       </div>
 
-      {/* Year & category items */}
+      {/* -- Second row -- */}
       <div className="flex justify-between border-t-2 border-black/20 p-2">
+        {/* Year, category items */}
         <div className="flex items-center">
           <p className="mr-3 text-base font-bold">{year}</p>
           <ul className="flex-10 flex flex-wrap">
