@@ -1,4 +1,8 @@
 import { ContactForm } from '../components/ContactForm/ContactForm';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faInstagram,
+} from '@fortawesome/free-brands-svg-icons';
 
 export function Contact() {
   return (
@@ -8,9 +12,12 @@ export function Contact() {
       </h2>
       <p className="mb-4 w-full text-sm leading-relaxed sm:w-2/5 sm:text-base">
         Heb je interesse in een samenwerking, wil je een nummer laten produceren
-        of heb je gewoon een vraag? Vul het formulier hieronder in en ik kom bij
-        je terug.
+        of heb je gewoon een vraag? Neem contact met me op via <a href='https://www.instagram.com/thimssen/' target="_blank" rel="noopener noreferrer" className={"text-blue-500"}>
+          <FontAwesomeIcon icon={faInstagram} aria-hidden="true" />
+          <span>Instagram</span>
+        </a> of vul het formulier hieronder in en ik kom bij je terug.
       </p>
+      <FontAwesomeIcon icon='instagram' aria-hidden="true" />
       <div className="w-full sm:w-2/6">
         <ContactForm />
       </div>
