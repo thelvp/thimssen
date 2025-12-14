@@ -1,10 +1,7 @@
-import { useState } from 'react';
 import { PORTFOLIO_ITEMS } from '../data/PORTFOLIO_ITEMS';
 import { PortfolioItem } from '../components/PortfolioItem/PortfolioItem';
 
 export function Work() {
-  const [openItemId, setOpenItemId] = useState<string | null>(null);
-
   return (
     <div className="w-full md:w-[90%]">
       <div className="grid w-full grid-cols-1 sm:grid-cols-2 md:grid-cols-3 md:gap-2">
@@ -21,9 +18,6 @@ export function Work() {
               categoryItems={item.categoryItems}
               imageSrc={item.imageSrc}
               links={item.links}
-              isOpen={openItemId === idBase}
-              onOpen={() => setOpenItemId(idBase)}
-              onClose={() => setOpenItemId(null)}
             />
           );
         })}
