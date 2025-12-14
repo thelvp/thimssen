@@ -1,7 +1,5 @@
 import { PortfolioImage } from './PortfolioImage';
 import { PortfolioContent } from './PortfolioContent';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { ICON_MAP } from '../../utils/ICON_MAP';
 
 export type MediaType = 'Instagram' | 'Youtube' | 'Spotify' | 'Other';
 

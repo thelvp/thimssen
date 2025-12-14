@@ -25,20 +25,22 @@ export const PortfolioContent = ({
       </div>
 
       {/* Year & category items */}
-      <div className="flex items-center justify-between border-t-2 border-black/20 p-3">
-        <p className="mr-3 text-base font-bold">{year}</p>
-        <ul className="flex-10 flex flex-wrap">
-          {categoryItems.map((item) => (
-            <li key={item} className="m-0.5">
-              <span className="rounded-2xl bg-amber-400/75 px-2 py-1 font-mono text-sm text-black">
-                {item}
-              </span>
-            </li>
-          ))}
-        </ul>
+      <div className="flex justify-between border-t-2 border-black/20 p-2">
+        <div className="flex items-center">
+          <p className="mr-3 text-base font-bold">{year}</p>
+          <ul className="flex-10 flex flex-wrap">
+            {categoryItems.map((item) => (
+              <li key={item} className="m-0.5">
+                <span className="rounded-2xl bg-amber-400/70 px-2 py-1 font-mono text-sm text-black">
+                  {item}
+                </span>
+              </li>
+            ))}
+          </ul>
+        </div>
 
         {/* Social media icons  */}
-        <ul className="flex flex-wrap">
+        <ul className="ml-0.5 flex flex-wrap">
           {links.map((link) => {
             const { icon, classes } =
               ICON_MAP[link.mediaType] || ICON_MAP.Other;
@@ -46,7 +48,7 @@ export const PortfolioContent = ({
             return (
               <li
                 key={link.url}
-                className={`text-3xl ${classes} z-20 cursor-pointer`}
+                className={`text-3xl ${classes} transform cursor-pointer ease-in hover:scale-105`}
               >
                 <a href={link.url} target="_blank" rel="noopener noreferrer">
                   <FontAwesomeIcon icon={icon} aria-hidden="true" />
