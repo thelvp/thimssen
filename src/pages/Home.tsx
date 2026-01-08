@@ -15,7 +15,7 @@ export function Home() {
 
       <div className="max-w-1/2 l z-10">
         <h1 className="text-3xl font-extrabold sm:text-6xl">
-          Thimssen - music producer & muzikant
+          Thimssen - producer & muzikant
         </h1>
 
         <p className="mt-3 text-lg sm:text-xl">
