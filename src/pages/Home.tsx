@@ -19,16 +19,7 @@ export function Home() {
         </h1>
 
         <p className="mt-3 text-lg sm:text-xl">
-          Van gelaagde producties tot live shows met{' '}
-          <a
-            className="font-semibold underline-offset-4 hover:underline"
-            href="https://open.spotify.com/artist/2uhfXqGrbL6MDekftEEDMD?si=POmMI-6FS5CiPgkctsKoWw"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Echo Beach
-          </a>
-          .
+          recording / mixing / music production
         </p>
 
         <Link

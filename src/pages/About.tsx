@@ -20,21 +20,20 @@ export function About() {
           Thimssen
         </h2>
         <p className={paragraphStyle}>
-          Thimssen is een producer en muzikant met een passie voor het creëren
-          van sferen en verhalen door geluid. Vanuit zijn studio werkt hij aan
-          projecten die variëren van elektronische producties tot live
-          performances met zijn band Echo Beach.
+          Ik ben een producer en muzikant met een passie voor het maken van muziek.
+          Vanuit de studio werk ik aan projecten die variëren van elektronische producties
+          tot live performances en van het opnemen van podcasts tot volledige bands.
         </p>
         <p className={paragraphStyle}>
-          Zijn werk kenmerkt zich door een warme, analoge sound gecombineerd met
-          moderne productietechnieken. Hij gelooft dat elk nummer een eigen
-          wereld kan vormen — een emotionele ruimte waarin luisteraars even
-          kunnen verdwijnen.
+          Na jaren als drummer, toetsenist en zanger actief geweest te zijn in verschillende bands,
+          met vele opgenomen demo's tot gevolg, ben ik het produceren serieuzer gaan oppakken. Demo's
+          werden releases en waar dit eerst enkel was voor mijn eigen bands, ben ik ook steeds meer 
+          projecten met andere artiesten en kunstenaars gaan uitvoeren.
         </p>
         <p className={paragraphStyle}>
-          Naast het produceren voor anderen is Thimssen actief als performer. Op
-          het podium brengt hij energie, improvisatie en een diepe verbinding
-          met het publiek samen in een meeslepende live-ervaring.
+          Ik geloof dat elk nummer een eigen wereld kan vormen waar je als luisteraar even
+          in kunt verdwijnen. Ik ga graag met muzikanten aan de slag om samen op zoek te
+          gaan naar de wereld die zij voor ogen hebben.
         </p>
       </div>
     </div>
