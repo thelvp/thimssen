@@ -1,6 +1,6 @@
 {
   "name": "thimssen",
-  "homepage": "https://thelvp.github.io/",
+  "homepage": "https://thimssen.nl",
   "private": true,
   "version": "1.0.0",
   "type": "module",
@@ -10,7 +10,9 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "format": "prettier --check .",
-    "format:fix": "node --run format -- --write"
+    "format:fix": "node --run format -- --write",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^7.1.0",
@@ -19,6 +21,7 @@
     "@fortawesome/free-solid-svg-icons": "^7.1.0",
     "@fortawesome/react-fontawesome": "^3.1.0",
     "@tailwindcss/vite": "^4.1.16",
+    "gh-pages": "^6.3.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-router": "^7.9.5",
