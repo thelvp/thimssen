@@ -1,12 +1,12 @@
 interface NavItemProps {
   href: string;
   title: string;
-  color?: string;
 }
 
 export const NAV_ITEMS: NavItemProps[] = [
-  { href: '/', title: 'Home', color: 'blue-500' },
-  { href: '/about', title: 'Over', color: 'purple-500' },
-  { href: '/work', title: 'Projecten', color: 'pink-500' },
-  { href: '/contact', title: 'Contact', color: 'orange-500' },
+  { href: '/', title: 'Home' },
+  { href: '/about', title: 'Over' },
+  { href: '/projects', title: 'Projecten' },
+  // { href: '/music', title: 'Muziek' },
+  { href: '/contact', title: 'Contact' },
 ];

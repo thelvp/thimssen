@@ -15,30 +15,34 @@ export const PortfolioContent = ({
   links,
 }: PortfolioContentProps) => {
   return (
-    <>
+    <div className="flex flex-1 flex-col justify-between">
       {/* -- First row -- */}
+
       {/* Artist & title  */}
-      <div className="flex justify-between p-3 font-extrabold">
-        <div className="flex flex-col justify-center">
+      <div className="p-3 font-extrabold">
+        <div className="min-h-15">
           <h3 className="text-xl">{artistName}</h3>
-          <h3 className="text-3xl">{title}</h3>
+          <h3 className="text-3xl leading-tight">{title}</h3>
         </div>
       </div>
 
       {/* -- Second row -- */}
       <div className="flex justify-between border-t-2 border-black/20 p-2">
-        {/* Year, category items */}
         <div className="flex items-center">
+          {/* year  */}
           <p className="mr-3 text-base font-bold">{year}</p>
-          <ul className="flex-10 flex flex-wrap">
-            {categoryItems.map((item) => (
-              <li key={item} className="m-0.5">
-                <span className="rounded-2xl bg-amber-400/70 px-2 py-1 font-mono text-sm text-black">
-                  {item}
-                </span>
-              </li>
-            ))}
-          </ul>
+          {/* category */}
+          {categoryItems && (
+            <ul className="flex-10 flex flex-wrap">
+              {categoryItems.map((item) => (
+                <li key={item} className="m-0.5">
+                  <span className="rounded-2xl bg-amber-400/70 px-2 py-1 font-mono text-[11px] text-black">
+                    {item}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          )}
         </div>
 
         {/* Social media icons  */}
@@ -61,6 +65,6 @@ export const PortfolioContent = ({
           })}
         </ul>
       </div>
-    </>
+    </div>
   );
 };

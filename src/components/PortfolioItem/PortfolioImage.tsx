@@ -4,11 +4,11 @@ type PortfolioImageProps = Pick<PortfolioItemProps, 'imageSrc'>;
 
 export const PortfolioImage = ({ imageSrc }: PortfolioImageProps) => {
   return (
-    <div className="relative">
+    <div className="relative w-full overflow-hidden pb-[100%]">
       <img
         src={imageSrc}
         alt=""
-        className="block h-full w-full object-cover"
+        className="absolute inset-0 h-full w-full object-cover"
         loading="lazy"
         decoding="async"
       />
