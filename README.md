@@ -1,73 +1,55 @@
-# React + TypeScript + Vite
+# About this app
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a small portfolio site built with modern web tooling.
 
-Currently, two official plugins are available:
+## Tech stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Framework:** React
+- **Tooling / Bundler:** Vite
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **Icons:** Font Awesome (`@fortawesome/react-fontawesome`)
+- **Routing:** `react-router`
+- **Deployment:** `gh-pages` (publishes the `dist` folder to GitHub Pages)
+- **Linting:** ESLint
+- **Formatting:** Prettier (with `prettier-plugin-tailwindcss`)
+- **Vite React plugin:** `@vitejs/plugin-react-swc`
 
-## React Compiler
+## Available commands
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+Run these from the project root after installing dependencies with `npm install`.
 
-## Expanding the ESLint configuration
+- `npm run dev`: Starts the Vite development server for local development.
+- `npm run build`: Runs TypeScript build (`tsc -b`) and then `vite build` to produce a production `dist` folder.
+- `npm run preview`: Serves the production build locally using `vite preview` so you can check the built site.
+- `npm run lint`: Runs ESLint across the project to detect linting issues.
+- `npm run format`: Runs Prettier in check mode (`prettier --check .`) to show formatting issues.
+- `npm run format:fix`: Runs Prettier to write formatting changes (script uses a Node wrapper to execute Prettier with `--write`).
+- `npm run predeploy`: Runs the `build` script (this is configured to run automatically before `deploy`).
+- `npm run deploy`: Publishes the `dist` folder to GitHub Pages using `gh-pages -d dist`.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Quick start
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+1. Install dependencies:
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-]);
+```bash
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2. Start local development server:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x';
-import reactDom from 'eslint-plugin-react-dom';
+```bash
+npm run dev
+```
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-]);
+3. Build for production:
+
+```bash
+npm run build
+```
+
+4. Deploy to GitHub Pages:
+
+```bash
+npm run deploy
 ```
