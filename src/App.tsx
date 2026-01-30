@@ -1,11 +1,11 @@
-import { BrowserRouter, Route, Routes } from 'react-router';
+import { HashRouter, Route, Routes } from 'react-router';
 import { Layout } from './components';
 import { Home, About, Work, Contact, ErrorPage } from './pages';
 
 function App() {
   return (
     <div className="flex h-screen flex-col">
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route path="/" element={<Home />} />
@@ -15,7 +15,7 @@ function App() {
             <Route path="*" element={<ErrorPage />} />
           </Route>
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
