@@ -20,10 +20,7 @@ export const Navbar = () => {
           <ul className="flex flex-wrap items-center gap-8 last:pr-8">
             {NAV_ITEMS.map((item) => (
               <li className="text-sm font-bold sm:text-xl">
-                <Link
-                  to={item.href}
-                  className={`sm:hover:text-${item.color} sm:hover:underline`}
-                >
+                <Link to={item.href} className="sm:hover:underline">
                   {item.title}
                 </Link>
               </li>

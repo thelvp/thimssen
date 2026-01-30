@@ -7,7 +7,7 @@ export interface PortfolioItemProps {
   artistName: string;
   title: string;
   year: string;
-  categoryItems: string[];
+  categoryItems?: string[];
   links: { url: string; mediaType: MediaType }[];
   imageSrc: string;
 }
@@ -20,10 +20,17 @@ export const PortfolioItem = ({
   links = [],
   imageSrc,
 }: PortfolioItemProps) => {
+  const primaryLink = links[0];
+  const ariaLabel = `Open ${title} by ${artistName} on ${primaryLink.mediaType} (opens in a new tab)`;
+
   return (
-    <div
+    <a
       tabIndex={0}
-      className="m-3 overflow-hidden rounded-2xl bg-white text-left text-black/90"
+      className="hover:scale-99 m-4 flex transform cursor-pointer flex-col overflow-hidden rounded-2xl bg-white text-left text-black/90 transition-transform duration-150 ease-in focus:scale-95 sm:m-2 md:m-0"
+      href={primaryLink.url}
+      aria-label={ariaLabel}
+      target={primaryLink ? '_blank' : undefined}
+      rel={primaryLink ? 'noopener noreferrer' : undefined}
     >
       {/* Image */}
       <PortfolioImage imageSrc={imageSrc} />
@@ -36,6 +43,6 @@ export const PortfolioItem = ({
         categoryItems={categoryItems}
         links={links}
       />
-    </div>
+    </a>
   );
 };

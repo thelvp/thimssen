@@ -19,7 +19,6 @@ export const useIsMobile = () => {
   }, []);
 
   const isMobile = width <= 768;
-  console.log('🚀 ~ useIsMobile ~ isMobile:', isMobile);
 
   return isMobile;
 };
