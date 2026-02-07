@@ -73,7 +73,7 @@ export const PORTFOLIO_ITEMS: PortfolioItemProps[] = [
         mediaType: 'Spotify',
       },
     ],
-    imageSrc: lighthouse,
+    imageSrc: hunger,
   },
   {
     artistName: 'Echo Beach',
@@ -86,7 +86,7 @@ export const PORTFOLIO_ITEMS: PortfolioItemProps[] = [
         mediaType: 'Spotify',
       },
     ],
-    imageSrc: hunger,
+    imageSrc: lighthouse,
   },
   {
     artistName: 'Boyle',
