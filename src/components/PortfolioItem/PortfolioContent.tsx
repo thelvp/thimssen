@@ -31,9 +31,12 @@ export const PortfolioContent = ({
           <p className="mr-3 text-base font-bold">{year}</p>
           {/* category */}
           {categoryItems && (
-            <ul className="flex-10 flex flex-wrap rounded-xl bg-black/10 px-2 py-1 font-mono text-[11px] leading-tight text-black">
+            <ul className="flex-10 flex flex-wrap">
               {categoryItems.map((item) => (
-                <li key={item} className="m-0.5">
+                <li
+                  key={item}
+                  className="m-0.5 rounded-xl bg-black/10 px-2 py-1 font-mono text-[11px] leading-tight text-black"
+                >
                   <span>{item}</span>
                 </li>
               ))}
