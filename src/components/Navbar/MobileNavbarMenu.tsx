@@ -19,11 +19,11 @@ export const MobileNavbarMenu = () => {
         aria-expanded={open}
         aria-label={open ? 'Close menu' : 'Open menu'}
         onClick={onHandleClick}
-        className={`cursor-pointer ${!open && 'hidden'}}`}
+        className={`cursor-pointer ${!open && 'hidden'}`}
       >
         <FontAwesomeIcon
           icon={faBars}
-          className="px-4 text-white sm:text-2xl"
+          className="interactive focus-ring px-4 text-white sm:text-2xl"
         />
       </button>
 
@@ -41,14 +41,14 @@ export const MobileNavbarMenu = () => {
             type="button"
             onClick={() => setOpen(false)}
             aria-label="Close menu"
-            className="absolute right-4 top-4 cursor-pointer p-2 text-white"
+            className="interactive focus-ring absolute right-4 top-4 cursor-pointer p-2 text-white"
           >
             <FontAwesomeIcon icon={faXmark} className="text-2xl" />
           </button>
           <ul className="flex min-h-[60vh] flex-col items-center justify-center gap-4 pl-6">
             {NAV_ITEMS.map((item) => (
               <li
-                className="text-3xl font-bold hover:underline"
+                className="interactive focus-ring text-3xl font-bold hover:underline"
                 onClick={() => setOpen(false)}
               >
                 <Link to={item.href}>{item.title}</Link>

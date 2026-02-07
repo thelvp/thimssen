@@ -15,7 +15,7 @@ export const FooterLink = ({ color, title, icon, href }: FooterLinkProps) => {
         target="_blank"
         rel="noopener noreferrer"
         href={href}
-        className={`hover:font-semibold ${color}`}
+        className={`interactive focus-ring hover:font-semibold ${color}`}
       >
         {title}{' '}
         <FontAwesomeIcon icon={icon} aria-hidden="true" focusable={false} />

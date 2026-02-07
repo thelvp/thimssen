@@ -1,1 +1,39 @@
 @import 'tailwindcss';
+
+/* Micro-interactions utilities */
+@layer utilities {
+  /* Smooth, performant interactions for clickable elements */
+  .interactive {
+    @apply transition duration-200 ease-in-out will-change-transform;
+  }
+
+  /* Subtle press feedback */
+  .interactive:active {
+    transform: translateY(1px) scale(0.995);
+  }
+
+  /* Keyboard focus visible style (use on interactive elements) */
+  .focus-ring:focus-visible {
+    outline: none;
+    /* Strong single-layer blue ring for high contrast on dark backgrounds */
+    box-shadow: 0 0 0 4px rgba(102, 197, 255, 0.95);
+    border-radius: 0.375rem;
+  }
+}
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .interactive {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+/* Apply visible blue focus ring to common interactive elements for accessibility */
+:where(a, button, input, textarea, select, summary, [tabindex]) :focus-visible,
+:where(a, button, input, textarea, select, summary, [tabindex]):focus-visible {
+  outline: none;
+  /* Strong single-layer blue ring for high contrast on dark backgrounds */
+  box-shadow: 0 0 0 4px rgba(102, 197, 255, 0.95);
+  border-radius: 0.375rem;
+}

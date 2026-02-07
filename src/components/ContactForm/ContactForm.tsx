@@ -107,8 +107,9 @@ export const ContactForm = () => {
 
       <button
         type="submit"
-        className="mt-2 inline-block rounded bg-blue-600 px-4 py-2 font-semibold shadow-lg transition-all duration-300 hover:bg-blue-800 hover:shadow-xl"
+        className="interactive focus-ring mt-2 inline-block rounded bg-blue-600 px-4 py-2 font-semibold shadow-lg transition-all duration-300 hover:bg-blue-800 hover:shadow-xl"
         disabled={status === 'sending'}
+        aria-busy={status === 'sending'}
       >
         {status === 'sending' ? 'Aan het versturen...' : 'Versturen'}
       </button>

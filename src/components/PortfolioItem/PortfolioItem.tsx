@@ -26,7 +26,7 @@ export const PortfolioItem = ({
   return (
     <a
       tabIndex={0}
-      className="hover:scale-99 m-4 flex transform cursor-pointer flex-col overflow-hidden rounded-2xl bg-white text-left text-black/90 transition-transform duration-150 ease-in focus:scale-95 sm:m-2 md:m-0"
+      className="interactive hover:scale-99 focus-ring m-4 flex cursor-pointer flex-col overflow-hidden rounded-2xl bg-white text-left text-black/90 sm:m-2 md:m-0"
       href={primaryLink.url}
       aria-label={ariaLabel}
       target={primaryLink ? '_blank' : undefined}

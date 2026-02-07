@@ -24,7 +24,7 @@ export function Home() {
 
         <Link
           to="/contact"
-          className="mt-8 inline-block rounded-xl bg-blue-600 px-6 py-3 text-base font-semibold shadow-lg transition-all duration-300 hover:bg-blue-800 hover:shadow-xl"
+          className="interactive focus-ring mt-8 inline-block rounded-xl bg-blue-600 px-6 py-3 text-base font-semibold shadow-lg transition-all duration-300 hover:bg-blue-800 hover:shadow-xl"
         >
           Let's make some music
         </Link>

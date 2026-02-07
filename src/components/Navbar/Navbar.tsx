@@ -11,7 +11,7 @@ export const Navbar = () => {
     <nav role="navigation" aria-label="Primary">
       <div className="flex w-full items-center justify-between bg-black px-4 py-5">
         {/* Logo  */}
-        <Link to="/" className="">
+        <Link to="/" className="interactive focus-ring">
           <Logo />
         </Link>
 
@@ -20,7 +20,10 @@ export const Navbar = () => {
           <ul className="flex flex-wrap items-center gap-8 last:pr-8">
             {NAV_ITEMS.map((item) => (
               <li className="text-sm font-bold sm:text-xl">
-                <Link to={item.href} className="sm:hover:underline">
+                <Link
+                  to={item.href}
+                  className="interactive focus-ring sm:hover:underline"
+                >
                   {item.title}
                 </Link>
               </li>
