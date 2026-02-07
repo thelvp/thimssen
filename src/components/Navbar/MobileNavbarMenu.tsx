@@ -19,7 +19,7 @@ export const MobileNavbarMenu = () => {
         aria-expanded={open}
         aria-label={open ? 'Close menu' : 'Open menu'}
         onClick={onHandleClick}
-        className={`cursor-pointer ${!open && 'hidden'}`}
+        className="cursor-pointer"
       >
         <FontAwesomeIcon
           icon={faBars}
