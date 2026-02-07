@@ -4,8 +4,21 @@ import dust from '../assets/dust02.png';
 import hunger from '../assets/hunger02.png';
 import lighthouse from '../assets/lighthouse02.png';
 import palmerDoubt from '../assets/palmer_doubt.jpg';
+import thimssenDaydreaming from '../assets/thimssen_daydreaming.png';
 
 export const MUSIC_ITEMS: PortfolioItemProps[] = [
+  {
+    artistName: 'Thimssen',
+    title: 'Daydreaming',
+    year: '2026',
+    links: [
+      {
+        url: 'https://open.spotify.com/track/20PZ1ExYOZEPUKVn4SXmhj',
+        mediaType: 'Spotify'
+      }
+    ],
+    imageSrc: thimssenDaydreaming
+  },
   {
     artistName: 'Echo Beach',
     title: 'Hunger',
