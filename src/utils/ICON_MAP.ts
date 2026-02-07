@@ -13,7 +13,7 @@ export const ICON_MAP: Record<
 > = {
   Instagram: {
     icon: faInstagram,
-    classes: 'text-pink-600 hover:text-orange-800',
+    classes: 'text-pink-600 hover:text-pink-900',
   },
   Spotify: { icon: faSpotify, classes: 'text-green-500 hover:text-green-700' },
   Youtube: { icon: faYoutube, classes: 'text-red-500 hover:text-red-700' },
