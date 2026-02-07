@@ -12,7 +12,7 @@
     "format": "prettier --check .",
     "format:fix": "node --run format -- --write",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist --cname thimssen.nl"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^7.1.0",
