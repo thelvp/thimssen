@@ -52,7 +52,7 @@ export function About() {
           </p>
           <p>
             <FontAwesomeIcon icon={faComments} className="mr-3" />
-            Interesse om samen werken? Stuur me een{' '}
+            Interesse om samen te werken? Stuur me een{' '}
             <Link
               to="/contact"
               className="interactive focus-ring font-bold hover:underline"
