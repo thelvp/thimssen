@@ -12,16 +12,16 @@ import tanjaTerBrake_Ruimtevaarder from '../assets/tanjaterbrake_ruimtevaarder.j
 export const PORTFOLIO_ITEMS: PortfolioItemProps[] = [
   {
     artistName: 'Tanja ter Brake',
-    title: 'Soundscape theaterstuk \'Ruimtevaarder\'',
+    title: "Soundscape theaterstuk 'Ruimtevaarder'",
     year: '2026',
     categoryItems: ['production'],
     links: [
       {
         url: 'https://www.tanjaterbrake.nl/cabaretier-1',
-        mediaType: 'website'
-      }
+        mediaType: 'Other',
+      },
     ],
-    imageSrc: tanjaTerBrake_Ruimtevaarder
+    imageSrc: tanjaTerBrake_Ruimtevaarder,
   },
   {
     artistName: 'Citymarketing Amersfoort',
