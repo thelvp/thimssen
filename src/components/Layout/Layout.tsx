@@ -7,7 +7,7 @@ export function Layout() {
     <main className="flex min-h-screen flex-col">
       <Navbar />
 
-      <div className="bg-linear-to-b flex w-full flex-1 flex-col justify-center text-center text-gray-300 sm:flex-row">
+      <div className="bg-linear-to-b flex w-full flex-1 flex-col justify-center bg-black text-center text-gray-300 sm:flex-row">
         <Outlet />
       </div>
 

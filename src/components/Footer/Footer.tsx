@@ -4,8 +4,8 @@ import { FooterCreds } from './FooterCreds';
 
 export const Footer = () => {
   return (
-    <footer className="z-20 w-full p-4 text-gray-400">
-      <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-4 sm:grid-cols-3">
+    <footer className="z-20 w-full bg-black p-4 text-gray-400">
+      <div className="mx-auto grid max-w-full grid-cols-1 items-center gap-4 sm:grid-cols-3">
         <div className="hidden sm:block" />
 
         <ul className="flex flex-wrap items-center justify-center text-sm">
