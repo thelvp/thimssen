@@ -56,11 +56,7 @@ export const PortfolioContent = ({
                 className={`text-3xl ${classes} cursor-pointer font-extralight`}
               >
                 <a href={link.url} target="_blank" rel="noopener noreferrer">
-                  <FontAwesomeIcon
-                    icon={icon}
-                    aria-hidden="true"
-                    className=""
-                  />
+                  <FontAwesomeIcon icon={icon} aria-hidden="true" />
                   <span className="sr-only">Open on {link.mediaType}</span>
                 </a>
               </li>
