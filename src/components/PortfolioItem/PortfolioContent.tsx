@@ -19,26 +19,22 @@ export const PortfolioContent = ({
       {/* -- First row -- */}
 
       {/* Artist & title  */}
-      <div className="p-3 font-extrabold">
-        <div className="min-h-15">
-          <h3 className="text-xl">{artistName}</h3>
-          <h3 className="text-3xl leading-tight">{title}</h3>
-        </div>
+      <div className="min-h-15 p-3 leading-tight">
+        <h3 className="text-lg font-bold">{artistName}</h3>
+        <h3 className="text-2xl font-extrabold">{title}</h3>
       </div>
 
       {/* -- Second row -- */}
-      <div className="flex justify-between border-t-2 border-black/20 p-2">
+      <div className="flex justify-between border-t-2 border-black/10 p-2">
         <div className="flex items-center">
           {/* year  */}
           <p className="mr-3 text-base font-bold">{year}</p>
           {/* category */}
           {categoryItems && (
-            <ul className="flex-10 flex flex-wrap">
+            <ul className="flex-10 flex flex-wrap rounded-xl bg-black/10 px-2 py-1 font-mono text-[11px] leading-tight text-black">
               {categoryItems.map((item) => (
                 <li key={item} className="m-0.5">
-                  <span className="rounded-2xl bg-amber-400/70 px-2 py-1 font-mono text-[11px] text-black">
-                    {item}
-                  </span>
+                  <span>{item}</span>
                 </li>
               ))}
             </ul>
