@@ -2,24 +2,22 @@ import type { IconProp } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 type FooterLinkProps = {
-  color: string;
   title: string;
   href: string;
   icon: IconProp;
 };
 
-export const FooterLink = ({ color, title, icon, href }: FooterLinkProps) => {
+export const FooterLink = ({ title, icon, href }: FooterLinkProps) => {
   return (
-    <li className="mr-2 last:mr-0">
+    <li className="mr-2 last:mr-0 sm:mr-4">
       <a
         target="_blank"
         rel="noopener noreferrer"
         href={href}
-        className={`interactive focus-ring hover:font-semibold ${color}`}
+        className="interactive focus-ring"
       >
-        {title}{' '}
-        <FontAwesomeIcon icon={icon} aria-hidden="true" focusable={false} />
-        <span className="sr-only">(opens in a new tab)</span>
+        <FontAwesomeIcon icon={icon} aria-hidden="true" focusable={false} />{' '}
+        {title} <span className="sr-only">(opens in a new tab)</span>
       </a>
     </li>
   );

@@ -14,12 +14,10 @@ export function Home() {
       <div className="bg-linear-to-b absolute inset-0 from-transparent to-black/90"></div>
 
       <div className="max-w-1/2 l z-10">
-        <h1 className="text-3xl font-extrabold sm:text-6xl">
-          Thimssen - producer & muzikant
-        </h1>
+        <h1 className="text-3xl font-extrabold sm:text-6xl">Tim Thomassen</h1>
 
         <p className="mt-3 text-lg sm:text-xl">
-          recording / mixing / music production
+          recording / mixing / music production / artist
         </p>
 
         <Link

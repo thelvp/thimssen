@@ -10,13 +10,11 @@ export const Footer = () => {
 
         <ul className="flex flex-wrap items-center justify-center text-sm">
           <FooterLink
-            color="hover:text-blue-500"
             title="Instagram"
             href="https://www.instagram.com/thimssen/"
             icon={faInstagram}
           />
           <FooterLink
-            color="hover:text-green-500"
             title="Spotify"
             href="https://open.spotify.com/artist/2uhfXqGrbL6MDekftEEDMD?si=RTCS8gXOQHO1zlk8fMht0A"
             icon={faSpotify}

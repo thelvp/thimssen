@@ -1,4 +1,7 @@
+import { Link } from 'react-router';
 import echoBeach from '../assets/thimssen_about.jpg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faComments } from '@fortawesome/free-solid-svg-icons';
 
 export function About() {
   return (
@@ -13,29 +16,50 @@ export function About() {
         </div>
       </div>
 
-      <div className="w-full md:w-1/2 md:pr-8 md:pt-8">
+      <div className="w-full justify-center md:w-1/2 md:pr-8 md:pt-8">
         <h2 className="mb-4 text-3xl font-bold text-white/90 sm:text-4xl">
-          Thimssen
+          Tim Thomassen
         </h2>
-        <div className="text-sm leading-relaxed sm:text-base [&>p]:mb-4">
+        <div className="text-sm leading-6 sm:text-base [&>h2]:mb-2 [&>p]:mb-6">
           <p>
-            Ik ben een producer en muzikant met een passie voor het maken van
-            muziek. Vanuit de studio werk ik aan projecten die variëren van
-            elektronische producties tot live performances en van het opnemen
-            van podcasts tot volledige bands.
+            Ik ben{' '}
+            <Link
+              to={'/producing'}
+              className="interactive focus-ring font-bold hover:underline"
+            >
+              producer
+            </Link>{' '}
+            en{' '}
+            <Link
+              to={'/music'}
+              className="interactive focus-ring font-bold hover:underline"
+            >
+              muzikant
+            </Link>
+            . Vanuit mijn studio werk ik aan uiteenlopende projecten: van
+            elektronische producties en live performances tot podcasts en
+            bandopnames.
           </p>
           <p>
-            Na jaren als drummer, toetsenist en zanger actief geweest te zijn in
-            verschillende bands, met vele opgenomen demo's tot gevolg, ben ik
-            het produceren serieuzer gaan oppakken. Demo's werden releases en
-            waar dit eerst enkel was voor mijn eigen bands, ben ik ook steeds
-            meer projecten met andere artiesten en kunstenaars gaan uitvoeren.
+            Na jaren actief te zijn geweest als drummer, toetsenist en zanger
+            ben ik me steeds meer gaan richten op produceren. Wat begon met
+            demo’s voor mijn eigen bands groeide uit tot releases en
+            samenwerkingen met andere artiesten en makers.
           </p>
           <p>
-            Ik geloof dat elk nummer een eigen wereld kan vormen waar je als
-            luisteraar even in kunt verdwijnen. Ik ga graag met muzikanten aan
-            de slag om samen op zoek te gaan naar de wereld die zij voor ogen
-            hebben.
+            Ik geloof dat elk nummer een eigen wereld kan zijn. Samen met
+            muzikanten ga ik op zoek naar de sound en sfeer die daarbij horen.
+          </p>
+          <p>
+            <FontAwesomeIcon icon={faComments} className="mr-3" />
+            Interesse om samen werken? Stuur me een{' '}
+            <Link
+              to="/contact"
+              className="interactive focus-ring font-bold hover:underline"
+            >
+              bericht
+            </Link>
+            !
           </p>
         </div>
       </div>

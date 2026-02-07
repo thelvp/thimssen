@@ -1,7 +1,7 @@
 import { PORTFOLIO_ITEMS } from '../data/PORTFOLIO_ITEMS';
 import { PortfolioItem } from '../components/PortfolioItem/PortfolioItem';
 
-export function Projects() {
+export function Producing() {
   return (
     <div className="w-full md:w-[90%]">
       <div className="grid w-full grid-cols-1 place-items-stretch sm:grid-cols-3 sm:gap-4 md:grid-cols-3 md:gap-6">
