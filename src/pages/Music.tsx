@@ -4,7 +4,7 @@ import { MUSIC_ITEMS } from '../data/MUSIC_ITEMS';
 export function Music() {
   return (
     <div className="w-full sm:mt-3 md:w-[90%]">
-      <div className="grid w-full grid-cols-1 place-items-stretch sm:grid-cols-3 sm:gap-4 md:grid-cols-4 md:gap-6">
+      <div className="grid w-full grid-cols-1 place-items-stretch sm:grid-cols-2 sm:gap-2 md:grid-cols-3 md:gap-6 lg:grid-cols-4">
         {MUSIC_ITEMS.map((item) => {
           const idBase = `${item.artistName}-${item.title}`
             .replace(/\s+/g, '-')

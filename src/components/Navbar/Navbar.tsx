@@ -9,7 +9,9 @@ export const Navbar = () => {
 
   return (
     <nav role="navigation" aria-label="Primary">
-      <div className="flex w-full items-center justify-between bg-black px-4 py-5">
+      <div
+        className={`flex w-full items-center justify-between bg-black px-4 py-5 ${isMobile ? 'fixed top-0 z-20' : ''}`}
+      >
         {/* Logo  */}
         <Link to="/" className="interactive focus-ring">
           <Logo />
