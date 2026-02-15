@@ -1,10 +1,9 @@
 import { faInstagram, faSpotify } from '@fortawesome/free-brands-svg-icons';
 import { FooterLink } from './FooterLink';
-import { FooterCreds } from './FooterCreds';
 
 export const Footer = () => {
   return (
-    <footer className="z-20 w-full bg-black p-4 text-gray-400">
+    <footer className="z-20 mt-3 w-full bg-black p-4 text-gray-400">
       <div className="mx-auto grid max-w-full grid-cols-1 items-center gap-4 sm:grid-cols-3">
         <div className="hidden sm:block" />
 
@@ -20,10 +19,6 @@ export const Footer = () => {
             icon={faSpotify}
           />
         </ul>
-
-        <div className="text-wrap text-center sm:text-right">
-          <FooterCreds />
-        </div>
       </div>
     </footer>
   );
