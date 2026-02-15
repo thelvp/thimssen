@@ -1,8 +1,8 @@
 import type { PortfolioItemProps } from '../components/PortfolioItem/PortfolioItem';
 
-import dust from '../assets/echobeach_dust.jpg';
-import hunger from '../assets/echobeach_hunger.jpg';
-import lighthouse from '../assets/echobeach_lighthouse.jpg';
+import echobeachDust from '../assets/echobeach_dust.jpg';
+import echobeachHunger from '../assets/echobeach_hunger.jpg';
+import echobeachLighthouse from '../assets/echobeach_lighthouse.jpg';
 import palmerDoubt from '../assets/palmer_doubt.jpg';
 import thimssenDaydreaming from '../assets/thimssen_daydreaming.jpg';
 
@@ -29,7 +29,7 @@ export const MUSIC_ITEMS: PortfolioItemProps[] = [
         mediaType: 'Spotify',
       },
     ],
-    imageSrc: hunger,
+    imageSrc: echobeachHunger,
   },
   {
     artistName: 'Echo Beach',
@@ -41,7 +41,7 @@ export const MUSIC_ITEMS: PortfolioItemProps[] = [
         mediaType: 'Spotify',
       },
     ],
-    imageSrc: lighthouse,
+    imageSrc: echobeachLighthouse,
   },
   {
     artistName: 'Echo Beach',
@@ -53,7 +53,7 @@ export const MUSIC_ITEMS: PortfolioItemProps[] = [
         mediaType: 'Spotify',
       },
     ],
-    imageSrc: dust,
+    imageSrc: echobeachDust,
   },
   {
     artistName: 'PALMER',
