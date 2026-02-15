@@ -1,12 +1,12 @@
 import type { PortfolioItemProps } from '../components/PortfolioItem/PortfolioItem';
 
 import boyleLighter from '../assets/boyle_lighter.jpg';
-import dust from '../assets/dust02.png';
-import hunger from '../assets/hunger02.png';
-import lighthouse from '../assets/lighthouse02.png';
+import dust from '../assets/echobeach_dust.jpg';
+import hunger from '../assets/echobeach_hunger.jpg';
+import lighthouse from '../assets/echobeach_lighthouse.jpg';
 import dellaDixLivesessie from '../assets/delladix_livesessie.jpg';
 import wijamersoortMarketingVideo from '../assets/wijamersfoort_marketingvideo.jpg';
-import wijamersfoortWijkgedichten from '../assets/wijamersfoort_wijkgedichten.png';
+import wijamersfoortWijkgedichten from '../assets/wijamersfoort_wijkgedichten.jpg';
 import tanjaTerBrake_Ruimtevaarder from '../assets/tanjaterbrake_ruimtevaarder.jpg';
 
 export const PORTFOLIO_ITEMS: PortfolioItemProps[] = [

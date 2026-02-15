@@ -1,5 +1,5 @@
 import { Link } from 'react-router';
-import band from '../assets/echo_beach.jpeg';
+import band from '../assets/echo_beach.jpg';
 
 export function Home() {
   return (
