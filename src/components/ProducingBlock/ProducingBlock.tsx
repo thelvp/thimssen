@@ -47,7 +47,7 @@ export const ProducingBlock = () => {
         {visibleGroupsArray.map((group, i) => (
           <ul
             key={i}
-            className="mb-8 grid grid-cols-1 gap-6 px-2 sm:grid-cols-2 md:grid-cols-4"
+            className="mb-4 grid grid-cols-1 gap-4 px-2 sm:grid-cols-2 md:grid-cols-4"
           >
             {group.map(renderItem)}
           </ul>
@@ -55,11 +55,11 @@ export const ProducingBlock = () => {
       </div>
 
       {/* Mobile: horizontal swipe of visible items */}
-      <div className="flex snap-x snap-mandatory gap-4 overflow-x-auto py-2 md:hidden">
-        {visibleFlattened.map((item) => (
+      <div className="flex snap-x snap-mandatory overflow-x-auto md:hidden">
+        {PORTFOLIO_ITEMS.map((item) => (
           <div
             key={`${item.artistName}-${item.title}`}
-            className="grid-row-1 grid min-w-[80%] snap-center"
+            className="grid-row-1 grid min-w-[90%] snap-center"
           >
             {renderItem(item)}
           </div>
