@@ -5,7 +5,7 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import { faLink } from '@fortawesome/free-solid-svg-icons';
 import type { IconDefinition } from '@fortawesome/fontawesome-svg-core';
-import type { MediaType } from '../components/PortfolioItem/PortfolioItem';
+import type { MediaType } from '../components/ProducingBlock/PortfolioItem/PortfolioItem';
 
 export const ICON_MAP: Record<
   MediaType,

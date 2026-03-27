@@ -2,7 +2,7 @@ import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useState } from 'react';
 import { NAV_ITEMS } from '../../data';
-import { Link } from 'react-router';
+import ScrollLink from '../common/ScrollLink/ScrollLink';
 
 export const MobileNavbarMenu = () => {
   const [open, setOpen] = useState(false);
@@ -48,10 +48,10 @@ export const MobileNavbarMenu = () => {
           <ul className="flex min-h-[60vh] flex-col items-center justify-center gap-4 pl-6">
             {NAV_ITEMS.map((item) => (
               <li
+                key={item.href}
                 className="interactive focus-ring text-3xl font-bold hover:underline"
-                onClick={() => setOpen(false)}
               >
-                <Link to={item.href}>{item.title}</Link>
+                <ScrollLink to={item.href}>{item.title}</ScrollLink>
               </li>
             ))}
           </ul>

@@ -1,4 +1,4 @@
-import type { PortfolioItemProps } from '../components/PortfolioItem/PortfolioItem';
+import type { PortfolioItemProps } from '../components/ProducingBlock/PortfolioItem/PortfolioItem';
 
 import boyleLighter from '../assets/boyle_lighter.jpg';
 import echobeachDust from '../assets/echobeach_dust.jpg';
@@ -9,8 +9,22 @@ import wijamersoortMarketingVideo from '../assets/wijamersfoort_marketingvideo.j
 import wijamersfoortWijkgedichten from '../assets/wijamersfoort_wijkgedichten.jpg';
 import tanjaTerBrakeRuimtevaarder from '../assets/tanjaterbrake_ruimtevaarder.jpg';
 import thimssenDaydreaming from '../assets/thimssen_daydreaming.jpg';
+import thimssenResist from '../assets/thimssen_resist.jpg';
 
 export const PORTFOLIO_ITEMS: PortfolioItemProps[] = [
+  {
+    artistName: 'Thimssen',
+    title: 'Resist',
+    year: '2026',
+    categoryItems: ['production'],
+    links: [
+      {
+        url: 'https://open.spotify.com/track/6jd8vWNbd1MO4bTlCxKkHZ',
+        mediaType: 'Spotify',
+      },
+    ],
+    imageSrc: thimssenResist,
+  },
   {
     artistName: 'Thimssen',
     title: 'Daydreaming',
@@ -20,9 +34,9 @@ export const PORTFOLIO_ITEMS: PortfolioItemProps[] = [
       {
         url: 'https://open.spotify.com/track/20PZ1ExYOZEPUKVn4SXmhj',
         mediaType: 'Spotify',
-      }
+      },
     ],
-    imageSrc: thimssenDaydreaming
+    imageSrc: thimssenDaydreaming,
   },
   {
     artistName: 'Tanja ter Brake',
