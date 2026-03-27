@@ -5,7 +5,7 @@ import ScrollLink from '../common/ScrollLink/ScrollLink';
 
 export const AboutBlock = () => {
   return (
-    <div className="mx-auto flex max-w-6xl flex-col justify-center gap-12 text-start md:flex-row md:items-center md:gap-16">
+    <div className="mx-auto flex max-w-6xl flex-col justify-center gap-12 text-start sm:rounded-2xl sm:bg-[#0a023ca1] sm:p-10 md:flex-row md:items-center md:gap-16">
       <div className="w-full md:w-1/2">
         <div className="aspect-square w-full overflow-hidden rounded-2xl shadow-lg">
           <img

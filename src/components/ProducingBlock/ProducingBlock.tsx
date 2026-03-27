@@ -38,7 +38,6 @@ export const ProducingBlock = () => {
   const loadMore = () => setVisibleGroups((v) => Math.min(v + 1, maxGroups));
 
   const visibleGroupsArray = portfolioGroups.slice(0, visibleGroups);
-  const visibleFlattened = visibleGroupsArray.flat();
 
   return (
     <div className="w-full">

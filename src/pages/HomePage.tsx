@@ -15,7 +15,7 @@ export function HomePage() {
         <ProducingBlock />
       </section>
 
-      <section className="bg-[#0a023c] px-6 py-10" id="about">
+      <section className="px-6 py-10" id="about">
         <AboutBlock />
       </section>
 
@@ -23,10 +23,7 @@ export function HomePage() {
         <MusicBlock />
       </section>
 
-      <section
-        className="min-h-2/3 bg-[#0a023c] bg-opacity-75 px-6 py-10"
-        id="contact"
-      >
+      <section className="min-h-2/3 px-6 py-10" id="contact">
         <ContactBlock />
       </section>
     </main>
