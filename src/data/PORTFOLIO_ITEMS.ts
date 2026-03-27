@@ -9,8 +9,22 @@ import wijamersoortMarketingVideo from '../assets/wijamersfoort_marketingvideo.j
 import wijamersfoortWijkgedichten from '../assets/wijamersfoort_wijkgedichten.jpg';
 import tanjaTerBrakeRuimtevaarder from '../assets/tanjaterbrake_ruimtevaarder.jpg';
 import thimssenDaydreaming from '../assets/thimssen_daydreaming.jpg';
+import thimssenResist from '../assets/thimssen_resist.jpg';
 
 export const PORTFOLIO_ITEMS: PortfolioItemProps[] = [
+  {
+    artistName: 'Thimssen',
+    title: 'Resist',
+    year: '2026',
+    categoryItems: ['production'],
+    links: [
+      {
+        url: 'https://open.spotify.com/track/6jd8vWNbd1MO4bTlCxKkHZ',
+        mediaType: 'Spotify',
+      },
+    ],
+    imageSrc: thimssenResist,
+  },
   {
     artistName: 'Thimssen',
     title: 'Daydreaming',
