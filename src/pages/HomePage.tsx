@@ -15,7 +15,7 @@ export function HomePage() {
         <ProducingBlock />
       </section>
 
-      <section className="max-h-screen bg-blue-900 py-10" id="about">
+      <section className="max-h-screen bg-gray-900 py-10" id="about">
         <AboutBlock />
       </section>
 
@@ -24,7 +24,7 @@ export function HomePage() {
       </section>
 
       <section
-        className="min-h-2/3 max-h-screen bg-amber-800 py-10"
+        className="min-h-2/3 b max-h-screen bg-gray-900 py-10"
         id="contact"
       >
         <ContactBlock />
