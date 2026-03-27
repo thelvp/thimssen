@@ -4,7 +4,7 @@ import { HomeBanner } from '../components/HomeBanner/HomeBanner';
 import { MusicBlock } from '../components/MusicBlock/MusicBlock';
 import { ProducingBlock } from '../components/ProducingBlock/ProducingBlock';
 
-export function Home() {
+export function HomePage() {
   return (
     <main className="h-screen snap-y snap-mandatory overflow-y-auto scroll-smooth">
       <section className="h-[70vh] snap-start" id="home">
@@ -12,7 +12,7 @@ export function Home() {
       </section>
 
       <section
-        className="min-h-2/3 max-h-screen snap-start overflow-hidden py-10"
+        className="min-h-2/3 max-h-screen snap-start bg-black py-10"
         id="producing"
       >
         <ProducingBlock />

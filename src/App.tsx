@@ -1,11 +1,11 @@
 import { Layout } from './components';
-import { Home } from './pages';
+import { HomePage } from './pages/HomePage';
 
 function App() {
   return (
     <div className="flex h-screen flex-col">
       <Layout>
-        <Home />
+        <HomePage />
       </Layout>
     </div>
   );

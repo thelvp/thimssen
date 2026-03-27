@@ -1,7 +1,7 @@
 import { useIsMobile } from '../../hooks/useIsMobile';
 import { NAV_ITEMS } from '../../data/NAV_ITEMS';
 import { MobileNavbarMenu } from './MobileNavbarMenu';
-import { ScrollLink } from '../ScrollLink/ScrollLink';
+import { ScrollLink } from '../common/ScrollLink/ScrollLink';
 
 export const Navbar = () => {
   const isMobile = useIsMobile();

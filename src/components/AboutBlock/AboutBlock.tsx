@@ -1,6 +1,7 @@
 import echoBeach from '../../assets/thimssen_about.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faComments } from '@fortawesome/free-solid-svg-icons';
+import ScrollLink from '../common/ScrollLink/ScrollLink';
 
 export const AboutBlock = () => {
   return (
@@ -22,19 +23,19 @@ export const AboutBlock = () => {
         <div className="text-base sm:text-base [&>p]:mb-6">
           <p>
             Ik ben{' '}
-            <a
-              href="#producing"
+            <ScrollLink
+              to="#producing"
               className="interactive focus-ring font-bold hover:underline"
             >
               producer
-            </a>{' '}
+            </ScrollLink>{' '}
             en{' '}
-            <a
-              href="#music"
+            <ScrollLink
+              to="#music"
               className="interactive focus-ring font-bold hover:underline"
             >
               muzikant
-            </a>
+            </ScrollLink>
             . Vanuit mijn studio werk ik aan uiteenlopende projecten: van
             elektronische producties en live performances tot podcasts en
             bandopnames.
@@ -51,12 +52,12 @@ export const AboutBlock = () => {
           </p>
           <p>
             <FontAwesomeIcon icon={faComments} className="mr-3" />
-            <a
-              href="#contact"
+            <ScrollLink
+              to="#contact"
               className="interactive focus-ring font-bold hover:underline"
             >
               Interesse om samen te werken? Stuur me een bericht!
-            </a>
+            </ScrollLink>
           </p>
         </div>
       </div>
