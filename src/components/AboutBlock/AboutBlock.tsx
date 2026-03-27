@@ -5,7 +5,7 @@ import ScrollLink from '../common/ScrollLink/ScrollLink';
 
 export const AboutBlock = () => {
   return (
-    <div className="mx-auto flex max-w-6xl flex-col justify-center gap-12 text-start sm:rounded-2xl sm:bg-[#0a023ca1] sm:p-10 md:flex-row md:items-center md:gap-16">
+    <div className="sm:bg-linear-to-r mx-auto flex max-w-6xl flex-col justify-center gap-12 text-start sm:rounded-2xl sm:bg-[#2a2644] sm:p-10 md:flex-row md:items-center md:gap-16">
       <div className="w-full md:w-1/2">
         <div className="aspect-square w-full overflow-hidden rounded-2xl shadow-lg">
           <img
@@ -17,9 +17,7 @@ export const AboutBlock = () => {
       </div>
 
       <div className="flex w-full flex-col justify-center leading-6 md:w-1/2">
-        <h2 className="mb-5 text-3xl font-bold text-white/90 sm:text-4xl">
-          Tim Thomassen
-        </h2>
+        <h2 className="mb-5 text-3xl font-bold sm:text-4xl">Tim Thomassen</h2>
         <div className="text-base sm:text-base">
           <p className="mb-6">
             Ik ben{' '}
