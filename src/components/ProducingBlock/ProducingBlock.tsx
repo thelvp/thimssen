@@ -59,7 +59,7 @@ export const ProducingBlock = () => {
         {visibleFlattened.map((item) => (
           <div
             key={`${item.artistName}-${item.title}`}
-            className="min-w-[80%] snap-center"
+            className="grid-row-1 grid min-w-[80%] snap-center"
           >
             {renderItem(item)}
           </div>
@@ -67,10 +67,11 @@ export const ProducingBlock = () => {
       </div>
 
       {visibleGroups < maxGroups && (
-        <div className="mt-6 flex justify-center text-2xl">
+        <div className="mt-6 hidden justify-center text-2xl md:flex">
           <button
             onClick={loadMore}
-            className="interactive focus-ring rounded bg-black px-6 py-3 text-white opacity-75"
+            aria-label="load more"
+            className="interactive focus-ring rounded bg-black px-6 py-3 text-white opacity-75 hover:scale-105 hover:opacity-100"
           >
             <FontAwesomeIcon icon={faAnglesDown} />
           </button>

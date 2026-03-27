@@ -11,20 +11,20 @@ export function HomePage() {
         <HomeBanner />
       </section>
 
-      <section className="max-h-screen py-10" id="producing">
+      <section className="py-10" id="producing">
         <ProducingBlock />
       </section>
 
-      <section className="max-h-screen bg-[#0a023c] py-10" id="about">
+      <section className="bg-[#0a023c] px-6 py-10" id="about">
         <AboutBlock />
       </section>
 
-      <section className="max-h-screen p-10" id="music">
+      <section className="p-10" id="music">
         <MusicBlock />
       </section>
 
       <section
-        className="min-h-2/3 b max-h-screen bg-[#0a023c] py-10"
+        className="min-h-2/3 bg-[#0a023c] bg-opacity-75 px-6 py-10"
         id="contact"
       >
         <ContactBlock />
