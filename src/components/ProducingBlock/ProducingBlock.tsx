@@ -5,7 +5,7 @@ import {
   type PortfolioItemProps,
 } from './PortfolioItem/PortfolioItem';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAnglesLeft, faAnglesRight } from '@fortawesome/free-solid-svg-icons';
+import { faAnglesDown } from '@fortawesome/free-solid-svg-icons';
 
 const chunkArray = (array: PortfolioItemProps[], size: number) => {
   return Array.from({ length: Math.ceil(array.length / size) }, (_, i) =>
@@ -14,83 +14,49 @@ const chunkArray = (array: PortfolioItemProps[], size: number) => {
 };
 
 export const ProducingBlock = () => {
-  const ITEMS_PER_CLICK = 8;
-  const portfolioItemsArray = useMemo(
-    () => chunkArray(PORTFOLIO_ITEMS, ITEMS_PER_CLICK),
+  const ITEMS_PER_BATCH = 8;
+  const portfolioGroups = useMemo(
+    () => chunkArray(PORTFOLIO_ITEMS, ITEMS_PER_BATCH),
     []
   );
-  const maxItems = portfolioItemsArray.length - 1;
-  const [page, setPage] = useState(0);
 
-  const renderItem = (item: PortfolioItemProps) => {
-    return (
-      <PortfolioItem
-        key={`${item.artistName}-${item.title}`}
-        artistName={item.artistName}
-        title={item.title}
-        year={item.year}
-        categoryItems={item.categoryItems}
-        imageSrc={item.imageSrc}
-        links={item.links}
-      />
-    );
-  };
+  const maxGroups = portfolioGroups.length;
+  const [visibleGroups, setVisibleGroups] = useState(1);
 
-  const scrollNext = () => {
-    setPage((p) => Math.min(p + 1, maxItems));
-  };
+  const renderItem = (item: PortfolioItemProps) => (
+    <PortfolioItem
+      key={`${item.artistName}-${item.title}`}
+      artistName={item.artistName}
+      title={item.title}
+      year={item.year}
+      categoryItems={item.categoryItems}
+      imageSrc={item.imageSrc}
+      links={item.links}
+    />
+  );
 
-  const scrollBack = () => {
-    setPage((p) => Math.max(p - 1, 0));
-  };
+  const loadMore = () => setVisibleGroups((v) => Math.min(v + 1, maxGroups));
+
+  const visibleGroupsArray = portfolioGroups.slice(0, visibleGroups);
+  const visibleFlattened = visibleGroupsArray.flat();
 
   return (
     <div className="w-full">
-      <div className="flex justify-between"></div>
-
-      {/* Desktop */}
-      <div className="hidden items-center gap-4 md:flex md:px-2">
-        {/* LEFT BUTTON */}
-        <button
-          onClick={scrollBack}
-          disabled={page === 0}
-          className="text-2xl text-white disabled:opacity-50"
-        >
-          <FontAwesomeIcon icon={faAnglesLeft} />
-        </button>
-
-        {/* CAROUSEL */}
-        <div className="flex-1 overflow-hidden">
-          <div
-            className="flex transition-transform duration-500 ease-in-out"
-            style={{
-              transform: `translateX(-${page * 100}%)`,
-            }}
+      {/* Desktop: stacked groups, each group is an 8-item grid (2 rows × 4 cols on wide screens) */}
+      <div className="hidden md:block">
+        {visibleGroupsArray.map((group, i) => (
+          <ul
+            key={i}
+            className="mb-8 grid grid-cols-1 gap-6 px-2 sm:grid-cols-2 md:grid-cols-4"
           >
-            {portfolioItemsArray.map((group, i) => (
-              <ul
-                key={i}
-                className="grid min-w-full gap-4 sm:grid-cols-3 sm:grid-rows-2 md:grid-cols-4"
-              >
-                {group.map(renderItem)}
-              </ul>
-            ))}
-          </div>
-        </div>
-
-        {/* RIGHT BUTTON */}
-        <button
-          onClick={scrollNext}
-          disabled={page === maxItems}
-          className="text-2xl text-white disabled:opacity-50"
-        >
-          <FontAwesomeIcon icon={faAnglesRight} />
-        </button>
+            {group.map(renderItem)}
+          </ul>
+        ))}
       </div>
 
-      {/* Mobile (Swipe) */}
-      <div className="flex snap-x snap-mandatory gap-4 overflow-x-auto md:hidden">
-        {PORTFOLIO_ITEMS.map((item) => (
+      {/* Mobile: horizontal swipe of visible items */}
+      <div className="flex snap-x snap-mandatory gap-4 overflow-x-auto py-2 md:hidden">
+        {visibleFlattened.map((item) => (
           <div
             key={`${item.artistName}-${item.title}`}
             className="min-w-[80%] snap-center"
@@ -99,6 +65,17 @@ export const ProducingBlock = () => {
           </div>
         ))}
       </div>
+
+      {visibleGroups < maxGroups && (
+        <div className="mt-6 flex justify-center text-2xl">
+          <button
+            onClick={loadMore}
+            className="interactive focus-ring rounded bg-black px-6 py-3 text-white opacity-75"
+          >
+            <FontAwesomeIcon icon={faAnglesDown} />
+          </button>
+        </div>
+      )}
     </div>
   );
 };
