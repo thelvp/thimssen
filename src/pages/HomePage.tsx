@@ -6,31 +6,25 @@ import { ProducingBlock } from '../components/ProducingBlock/ProducingBlock';
 
 export function HomePage() {
   return (
-    <main className="h-screen snap-y snap-mandatory overflow-y-auto scroll-smooth">
-      <section className="h-[70vh] snap-start" id="home">
+    <main className="h-screen snap-y overflow-y-auto scroll-smooth">
+      <section className="h-[70vh]" id="home">
         <HomeBanner />
       </section>
 
-      <section
-        className="min-h-2/3 max-h-screen snap-start bg-black py-10"
-        id="producing"
-      >
+      <section className="max-h-screen py-10" id="producing">
         <ProducingBlock />
       </section>
 
-      <section
-        className="min-h-2/3 max-h-screen snap-start bg-blue-900"
-        id="about"
-      >
+      <section className="max-h-screen bg-blue-900 py-10" id="about">
         <AboutBlock />
       </section>
 
-      <section className="min-h-2/3 max-h-screen snap-start p-10" id="music">
+      <section className="max-h-screen p-10" id="music">
         <MusicBlock />
       </section>
 
       <section
-        className="min-h-2/3 max-h-screen snap-start bg-amber-800 py-10"
+        className="min-h-2/3 max-h-screen bg-amber-800 py-10"
         id="contact"
       >
         <ContactBlock />

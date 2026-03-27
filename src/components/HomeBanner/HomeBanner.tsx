@@ -16,14 +16,14 @@ export const HomeBanner = () => {
         <h1 className="text-3xl font-extrabold sm:text-6xl">Tim Thomassen</h1>
 
         <p className="mt-3 text-lg sm:text-xl">
-          recording / mixing / music production / artist
+          Producing / Mixing / Recording / Musician
         </p>
 
         <a
           href="#contact"
           className="interactive focus-ring mt-8 inline-block rounded-xl bg-blue-600 px-6 py-3 text-base font-semibold shadow-lg transition-all duration-300 hover:bg-blue-800 hover:shadow-xl"
         >
-          Let's make some music
+          Let's make some music together
         </a>
       </div>
     </div>

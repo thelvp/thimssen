@@ -5,7 +5,7 @@ import ScrollLink from '../common/ScrollLink/ScrollLink';
 
 export const AboutBlock = () => {
   return (
-    <div className="mx-auto flex max-w-6xl flex-col justify-center gap-12 p-6 text-start md:flex-row md:items-center md:gap-16">
+    <div className="mx-auto flex max-w-6xl flex-col justify-center gap-12 px-6 text-start md:flex-row md:items-center md:gap-16">
       <div className="w-full md:w-1/2">
         <div className="aspect-square w-full overflow-hidden rounded-2xl shadow-lg">
           <img
@@ -20,8 +20,8 @@ export const AboutBlock = () => {
         <h2 className="mb-5 text-3xl font-bold text-white/90 sm:text-4xl">
           Tim Thomassen
         </h2>
-        <div className="text-base sm:text-base [&>p]:mb-6">
-          <p>
+        <div className="text-base sm:text-base">
+          <p className="mb-6">
             Ik ben{' '}
             <ScrollLink
               to="#producing"
@@ -40,13 +40,13 @@ export const AboutBlock = () => {
             elektronische producties en live performances tot podcasts en
             bandopnames.
           </p>
-          <p>
+          <p className="mb-6">
             Na jaren actief te zijn geweest als drummer, toetsenist en zanger
             ben ik me steeds meer gaan richten op produceren. Wat begon met
             demo’s voor mijn eigen bands groeide uit tot releases en
             samenwerkingen met andere artiesten en makers.
           </p>
-          <p>
+          <p className="mb-6">
             Ik geloof dat elk nummer een eigen wereld kan zijn. Samen met
             muzikanten ga ik op zoek naar de sound en sfeer die daarbij horen.
           </p>

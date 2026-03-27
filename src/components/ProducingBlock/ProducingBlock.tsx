@@ -22,6 +22,14 @@ export const ProducingBlock = () => {
   const maxItems = portfolioItemsArray.length - 1;
   const [page, setPage] = useState(0);
 
+  const isMobile =
+    /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+      navigator.userAgent
+    );
+  if (isMobile) {
+    console.log('Mobile device detected');
+  }
+
   const renderItem = (item: PortfolioItemProps) => {
     return (
       <PortfolioItem
@@ -46,15 +54,15 @@ export const ProducingBlock = () => {
 
   return (
     <div className="w-full">
-      <div className="mb-4 flex justify-between"></div>
+      <div className="flex justify-between"></div>
 
       {/* Desktop */}
-      <div className="hidden items-center gap-4 md:flex">
+      <div className="hidden items-center gap-4 md:flex md:px-2">
         {/* LEFT BUTTON */}
         <button
           onClick={scrollBack}
           disabled={page === 0}
-          className="text-white disabled:opacity-50"
+          className="text-2xl text-white disabled:opacity-50"
         >
           <FontAwesomeIcon icon={faAnglesLeft} />
         </button>
@@ -68,7 +76,10 @@ export const ProducingBlock = () => {
             }}
           >
             {portfolioItemsArray.map((group, i) => (
-              <ul key={i} className="grid min-w-full grid-cols-4 gap-4">
+              <ul
+                key={i}
+                className="grid min-w-full gap-4 sm:grid-cols-3 md:grid-cols-4"
+              >
                 {group.map(renderItem)}
               </ul>
             ))}
@@ -79,7 +90,7 @@ export const ProducingBlock = () => {
         <button
           onClick={scrollNext}
           disabled={page === maxItems}
-          className="text-white disabled:opacity-50"
+          className="text-2xl text-white disabled:opacity-50"
         >
           <FontAwesomeIcon icon={faAnglesRight} />
         </button>

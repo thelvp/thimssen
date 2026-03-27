@@ -10,7 +10,7 @@ export const Navbar = () => {
     <nav role="navigation" aria-label="Primary">
       {/* Desktop */}
       {!isMobile && (
-        <ul className="sticky flex w-full flex-wrap items-center justify-center gap-8 rounded-2xl bg-black p-5">
+        <ul className="flex w-full flex-wrap items-center justify-center gap-8 rounded-2xl bg-black p-5">
           {NAV_ITEMS.map((item) => (
             <li key={item.href} className="text-sm font-bold sm:text-xl">
               <ScrollLink
