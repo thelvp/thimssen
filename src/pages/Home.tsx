@@ -1,32 +1,40 @@
-import { Link } from 'react-router';
-import band from '../assets/echo_beach.jpg';
+import { AboutBlock } from '../components/AboutBlock/AboutBlock';
+import { ContactBlock } from '../components/ContactBlock/ContactBlock';
+import { HomeBanner } from '../components/HomeBanner/HomeBanner';
+import { MusicBlock } from '../components/MusicBlock/MusicBlock';
+import { ProducingBlock } from '../components/ProducingBlock/ProducingBlock';
 
 export function Home() {
   return (
-    <div className="relative flex h-full w-full items-center justify-center pb-3 text-center text-white">
-      <div
-        className="absolute inset-0 bg-cover bg-center"
-        style={{
-          backgroundImage: `url(${band})`,
-        }}
-        aria-hidden="true"
-      />
-      <div className="bg-linear-to-b absolute inset-0 from-transparent to-black/90"></div>
+    <main className="h-screen snap-y snap-mandatory overflow-y-auto scroll-smooth">
+      <section className="h-[70vh] snap-start" id="home">
+        <HomeBanner />
+      </section>
 
-      <div className="max-w-1/2 l z-10">
-        <h1 className="text-3xl font-extrabold sm:text-6xl">Tim Thomassen</h1>
+      <section
+        className="min-h-2/3 max-h-screen snap-start overflow-hidden py-10"
+        id="producing"
+      >
+        <ProducingBlock />
+      </section>
 
-        <p className="mt-3 text-lg sm:text-xl">
-          recording / mixing / music production / artist
-        </p>
+      <section
+        className="min-h-2/3 max-h-screen snap-start bg-blue-900"
+        id="about"
+      >
+        <AboutBlock />
+      </section>
 
-        <Link
-          to="/contact"
-          className="interactive focus-ring mt-8 inline-block rounded-xl bg-blue-600 px-6 py-3 text-base font-semibold shadow-lg transition-all duration-300 hover:bg-blue-800 hover:shadow-xl"
-        >
-          Let's make some music
-        </Link>
-      </div>
-    </div>
+      <section className="min-h-2/3 max-h-screen snap-start p-10" id="music">
+        <MusicBlock />
+      </section>
+
+      <section
+        className="min-h-2/3 max-h-screen snap-start bg-amber-800 py-10"
+        id="contact"
+      >
+        <ContactBlock />
+      </section>
+    </main>
   );
 }

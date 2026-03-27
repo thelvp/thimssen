@@ -1,4 +1,4 @@
-import type { PortfolioItemProps } from '../components/PortfolioItem/PortfolioItem';
+import type { PortfolioItemProps } from '../components/ProducingBlock/PortfolioItem/PortfolioItem';
 
 import boyleLighter from '../assets/boyle_lighter.jpg';
 import echobeachDust from '../assets/echobeach_dust.jpg';
@@ -20,9 +20,9 @@ export const PORTFOLIO_ITEMS: PortfolioItemProps[] = [
       {
         url: 'https://open.spotify.com/track/20PZ1ExYOZEPUKVn4SXmhj',
         mediaType: 'Spotify',
-      }
+      },
     ],
-    imageSrc: thimssenDaydreaming
+    imageSrc: thimssenDaydreaming,
   },
   {
     artistName: 'Tanja ter Brake',

@@ -1,11 +1,10 @@
-import { Link } from 'react-router';
-import echoBeach from '../assets/thimssen_about.jpg';
+import echoBeach from '../../assets/thimssen_about.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faComments } from '@fortawesome/free-solid-svg-icons';
 
-export function About() {
+export const AboutBlock = () => {
   return (
-    <div className="mx-auto flex max-w-6xl flex-col items-center justify-center gap-12 px-6 py-8 text-start md:flex-row md:items-start md:gap-16">
+    <div className="mx-auto flex max-w-6xl flex-col justify-center gap-12 p-6 text-start md:flex-row md:items-center md:gap-16">
       <div className="w-full md:w-1/2">
         <div className="aspect-square w-full overflow-hidden rounded-2xl shadow-lg">
           <img
@@ -16,26 +15,26 @@ export function About() {
         </div>
       </div>
 
-      <div className="w-full justify-center md:w-1/2 md:pr-8 md:pt-8">
-        <h2 className="mb-4 text-3xl font-bold text-white/90 sm:text-4xl">
+      <div className="flex w-full flex-col justify-center leading-6 md:w-1/2">
+        <h2 className="mb-5 text-3xl font-bold text-white/90 sm:text-4xl">
           Tim Thomassen
         </h2>
-        <div className="text-sm leading-6 sm:text-base [&>h2]:mb-2 [&>p]:mb-6">
+        <div className="text-base sm:text-base [&>p]:mb-6">
           <p>
             Ik ben{' '}
-            <Link
-              to={'/producing'}
+            <a
+              href="#producing"
               className="interactive focus-ring font-bold hover:underline"
             >
               producer
-            </Link>{' '}
+            </a>{' '}
             en{' '}
-            <Link
-              to={'/music'}
+            <a
+              href="#music"
               className="interactive focus-ring font-bold hover:underline"
             >
               muzikant
-            </Link>
+            </a>
             . Vanuit mijn studio werk ik aan uiteenlopende projecten: van
             elektronische producties en live performances tot podcasts en
             bandopnames.
@@ -52,17 +51,15 @@ export function About() {
           </p>
           <p>
             <FontAwesomeIcon icon={faComments} className="mr-3" />
-            Interesse om samen te werken? Stuur me een{' '}
-            <Link
-              to="/contact"
+            <a
+              href="#contact"
               className="interactive focus-ring font-bold hover:underline"
             >
-              bericht
-            </Link>
-            !
+              Interesse om samen te werken? Stuur me een bericht!
+            </a>
           </p>
         </div>
       </div>
     </div>
   );
-}
+};

@@ -95,7 +95,7 @@ export const ContactForm = () => {
         />
       </label>
 
-      <label className="flex hidden flex-col">
+      <label className="hidden">
         <span>Naam</span>
         <textarea
           value={honeypot}

@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { ICON_MAP } from '../../utils/ICON_MAP';
+import { ICON_MAP } from '../../../utils/ICON_MAP';
 import type { PortfolioItemProps } from './PortfolioItem';
 
 type PortfolioContentProps = Pick<
