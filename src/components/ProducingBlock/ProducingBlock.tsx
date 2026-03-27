@@ -14,21 +14,13 @@ const chunkArray = (array: PortfolioItemProps[], size: number) => {
 };
 
 export const ProducingBlock = () => {
-  const ITEMS_PER_CLICK = 4;
+  const ITEMS_PER_CLICK = 8;
   const portfolioItemsArray = useMemo(
     () => chunkArray(PORTFOLIO_ITEMS, ITEMS_PER_CLICK),
     []
   );
   const maxItems = portfolioItemsArray.length - 1;
   const [page, setPage] = useState(0);
-
-  const isMobile =
-    /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-      navigator.userAgent
-    );
-  if (isMobile) {
-    console.log('Mobile device detected');
-  }
 
   const renderItem = (item: PortfolioItemProps) => {
     return (
@@ -78,7 +70,7 @@ export const ProducingBlock = () => {
             {portfolioItemsArray.map((group, i) => (
               <ul
                 key={i}
-                className="grid min-w-full gap-4 sm:grid-cols-3 md:grid-cols-4"
+                className="grid min-w-full gap-4 sm:grid-cols-3 sm:grid-rows-2 md:grid-cols-4"
               >
                 {group.map(renderItem)}
               </ul>
