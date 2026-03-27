@@ -15,7 +15,7 @@ export const ContactBlock = () => {
           href="https://www.instagram.com/thimssen/"
           target="_blank"
           rel="noopener noreferrer"
-          className={'text-blue-500'}
+          className="hover:underline"
         >
           <FontAwesomeIcon icon={faInstagram} aria-hidden="true" />
           <span>Instagram</span>
