@@ -23,7 +23,7 @@ export const MobileNavbarMenu = () => {
       >
         <FontAwesomeIcon
           icon={faBars}
-          className="interactive focus-ring px-4 text-white sm:text-2xl"
+          className="interactive focus-ring px-4 text-xl text-white"
         />
       </button>
 

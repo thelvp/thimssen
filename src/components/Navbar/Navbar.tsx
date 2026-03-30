@@ -26,7 +26,7 @@ export const Navbar = () => {
 
       {/* Mobile */}
       {isMobile && (
-        <div className="fixed top-0 z-20 flex w-full items-center justify-between bg-black px-4 py-5">
+        <div className="fixed top-0 z-20 flex w-full items-center justify-end bg-black px-4 py-5">
           <MobileNavbarMenu />
         </div>
       )}
