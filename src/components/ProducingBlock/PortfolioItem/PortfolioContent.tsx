@@ -1,10 +1,8 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { ICON_MAP } from '../../../utils/ICON_MAP';
 import type { PortfolioItemProps } from './PortfolioItem';
 
 type PortfolioContentProps = Pick<
   PortfolioItemProps,
-  'title' | 'artistName' | 'year' | 'categoryItems' | 'links'
+  'title' | 'artistName' | 'year' | 'categoryItems'
 >;
 
 export const PortfolioContent = ({
@@ -12,7 +10,6 @@ export const PortfolioContent = ({
   artistName,
   year,
   categoryItems,
-  links,
 }: PortfolioContentProps) => {
   return (
     <div className="flex flex-1 flex-col justify-between">
@@ -25,44 +22,22 @@ export const PortfolioContent = ({
       </div>
 
       {/* -- Second row -- */}
-      <div className="flex justify-between border-t-2 border-black/10 p-2">
-        <div className="flex items-center">
-          {/* year  */}
-          <p className="mr-3 text-base font-bold">{year}</p>
-          {/* category */}
-          {categoryItems && (
-            <ul className="flex-10 flex flex-wrap">
-              {categoryItems.map((item) => (
-                <li
-                  key={item}
-                  className="m-0.5 rounded-xl bg-black/10 px-2 py-1 font-mono text-[11px] leading-tight text-black"
-                >
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
-          )}
-        </div>
-
-        {/* Social media icons  */}
-        <ul className="ml-0.5 flex flex-wrap">
-          {links.map((link) => {
-            const { icon, classes } =
-              ICON_MAP[link.mediaType] || ICON_MAP.Other;
-
-            return (
+      <div className="flex items-center justify-between border-t-2 border-black/10 p-2">
+        {/* year  */}
+        <p className="mr-3 text-base font-bold">{year}</p>
+        {/* category */}
+        {categoryItems && (
+          <ul className="flex-10 flex flex-wrap justify-end">
+            {categoryItems.map((item) => (
               <li
-                key={link.url}
-                className={`text-3xl ${classes} cursor-pointer font-extralight`}
+                key={item}
+                className="m-0.5 rounded-xl bg-black/10 px-2 py-1 font-mono text-[13px] leading-tight text-black"
               >
-                <a href={link.url} target="_blank" rel="noopener noreferrer">
-                  <FontAwesomeIcon icon={icon} aria-hidden="true" />
-                  <span className="sr-only">Open on {link.mediaType}</span>
-                </a>
+                <span>{item}</span>
               </li>
-            );
-          })}
-        </ul>
+            ))}
+          </ul>
+        )}
       </div>
     </div>
   );

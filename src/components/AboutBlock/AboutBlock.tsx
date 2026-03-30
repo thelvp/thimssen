@@ -18,7 +18,7 @@ export const AboutBlock = () => {
 
       <div className="flex w-full flex-col justify-center leading-6 md:w-1/2">
         <h2 className="mb-5 text-3xl font-bold sm:text-4xl">Tim Thomassen</h2>
-        <div className="text-base sm:text-base">
+        <div className="text-base">
           <p className="mb-6">
             Ik ben{' '}
             <ScrollLink

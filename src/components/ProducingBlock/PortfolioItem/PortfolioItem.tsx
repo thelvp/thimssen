@@ -1,7 +1,12 @@
 import { PortfolioImage } from './PortfolioImage';
 import { PortfolioContent } from './PortfolioContent';
 
-export type MediaType = 'Instagram' | 'Youtube' | 'Spotify' | 'Other';
+export type MediaType =
+  | 'Instagram'
+  | 'Youtube'
+  | 'Spotify'
+  | 'StreamingLinks'
+  | 'Other';
 
 export interface PortfolioItemProps {
   artistName: string;
@@ -41,7 +46,6 @@ export const PortfolioItem = ({
         title={title}
         year={year}
         categoryItems={categoryItems}
-        links={links}
       />
     </a>
   );
