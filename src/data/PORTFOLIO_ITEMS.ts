@@ -19,7 +19,7 @@ export const PORTFOLIO_ITEMS: PortfolioItemProps[] = [
     categoryItems: ['production'],
     links: [
       {
-        url: 'https://open.spotify.com/track/6jd8vWNbd1MO4bTlCxKkHZ',
+        url: 'https://www.submithub.com/link/thimssen-resist',
         mediaType: 'Spotify',
       },
     ],
@@ -32,7 +32,7 @@ export const PORTFOLIO_ITEMS: PortfolioItemProps[] = [
     categoryItems: ['production'],
     links: [
       {
-        url: 'https://open.spotify.com/track/20PZ1ExYOZEPUKVn4SXmhj',
+        url: 'https://www.submithub.com/link/thimssen-daydreaming',
         mediaType: 'Spotify',
       },
     ],
@@ -97,7 +97,7 @@ export const PORTFOLIO_ITEMS: PortfolioItemProps[] = [
     categoryItems: ['production'],
     links: [
       {
-        url: 'https://open.spotify.com/track/3ElsAYN8H5qZRZoqv03XWF?si=3a0daa0764ad40f1',
+        url: 'https://www.submithub.com/link/echo-beach-hunger',
         mediaType: 'Spotify',
       },
     ],
@@ -110,7 +110,7 @@ export const PORTFOLIO_ITEMS: PortfolioItemProps[] = [
     categoryItems: ['production'],
     links: [
       {
-        url: 'https://open.spotify.com/track/5In11rjF2ODWyENoZSIF0o?si=d219e896b8554191',
+        url: 'https://www.submithub.com/link/echo-beach-the-lighthouse',
         mediaType: 'Spotify',
       },
     ],
@@ -136,7 +136,7 @@ export const PORTFOLIO_ITEMS: PortfolioItemProps[] = [
     categoryItems: ['production'],
     links: [
       {
-        url: 'https://open.spotify.com/track/3MDbgsID3K5g9KP99UhOEv?si=02b63262b6134fe9',
+        url: 'https://www.submithub.com/link/echo-beach-dust',
         mediaType: 'Spotify',
       },
     ],

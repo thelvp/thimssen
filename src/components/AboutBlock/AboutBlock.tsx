@@ -39,7 +39,7 @@ export const AboutBlock = () => {
             bandopnames.
           </p>
           <p className="mb-6">
-            Na jaren actief te zijn geweest als drummer, toetsenist en zanger
+            Na jaren actief te zijn geweest als drummer, toetsenist, gitarist en zanger
             ben ik me steeds meer gaan richten op produceren. Wat begon met
             demo’s voor mijn eigen bands groeide uit tot releases en
             samenwerkingen met andere artiesten en makers.
