@@ -53,3 +53,6 @@ npm run build
 ```bash
 npm run deploy
 ```
+
+## Assets
+Image assets have been compressed using https://squoosh.app/. 
