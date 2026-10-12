@@ -10,8 +10,22 @@ import wijamersfoortWijkgedichten from '../assets/wijamersfoort_wijkgedichten.jp
 import tanjaTerBrakeRuimtevaarder from '../assets/tanjaterbrake_ruimtevaarder.jpg';
 import thimssenDaydreaming from '../assets/thimssen_daydreaming.jpg';
 import thimssenResist from '../assets/thimssen_resist.jpg';
+import wijamersfoortPelgrimstocht from '../assets/wijamersfoort_pelgrimstocht.jpg'
 
 export const PORTFOLIO_ITEMS: PortfolioItemProps[] = [
+  {
+    artistName: 'Citymarketing Amersfoort',
+    title: 'Wij Amersfoort Pelgrimstocht',
+    year: '2026',
+    categoryItems: ['voice-over recording'],
+    links: [
+      {
+        url: 'https://youtu.be/hC1wdUFt1_I?si=RW5vncOn01_NB0NB',
+        mediaType: 'Youtube',
+      },
+    ],
+    imageSrc: wijamersfoortPelgrimstocht,
+  },
   {
     artistName: 'Thimssen',
     title: 'Resist',
@@ -45,7 +59,7 @@ export const PORTFOLIO_ITEMS: PortfolioItemProps[] = [
     categoryItems: ['production'],
     links: [
       {
-        url: 'https://www.tanjaterbrake.nl/cabaretier-1',
+        url: 'https://www.tanjaterbrake.nl/nieuw-idee',
         mediaType: 'Other',
       },
     ],
